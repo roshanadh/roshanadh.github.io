@@ -1,2 +1,2 @@
 # roshanadh.github.io
-A simple portfolio website.
+My portfolio using Vanilla JavaScript and CSS.
