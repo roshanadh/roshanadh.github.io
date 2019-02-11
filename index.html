@@ -1,1 +1,102 @@
-Hello World!
+<html> 
+    <head>
+        <title>Roshan Adhikari</title>
+        <style>
+           .bgImageBuilding{
+                background-image: url(res/building.jpg);
+            }
+            .bgImageSnow{
+                background-image: url(res/snow.jpg);
+            }
+            .bgImageBuilding, .bgImageSnow{
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                filter: blur(8px);
+            }
+            .content{
+                border-radius: 20px;
+                background-color: rgba(0, 0, 0, 0.009);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+            .menuBar{
+                
+                background-color: cornflowerblue;
+            }
+            .menuLink{
+                color: inherit;
+                text-decoration: none;
+            }
+            .helloWorld{
+                font-size: xx-large;
+                color: cornflowerblue;
+            }
+            .intro, .helloWorld{
+                font-family: Fira Code, 'Courier New', Courier, monospace;
+                text-align: right;
+            }
+            .intro{
+                font-size: large;
+            }
+        </style>
+        
+    </head>
+        <body onload="loadBg('Building')" onclick="changeBg()">
+            <div class='bgImage'></div>
+            <div class='content'>
+                <div class='menuBar'>
+                    <!-- <a href='https://roshanadh.github.io/' class='menuLink'>Home</a> | <a href='https://roshanadh.github.io/' class='menuLink'>Contact Me</a> -->
+                </div>
+                <h2 class='helloWorld'>
+                    hello world!
+                </h2>
+                <p class='intro'>
+                    <span id='name'>
+                        I am Roshan Adhikari.<br>
+                    </span>
+                    I am an aspiring Software Developer.
+                </p>
+            </div>
+            <script>
+                    var changeCounter = 0;
+                    var flag = '';
+                    function hideDiv(flag){
+                        document.getElementsByClassName('bgImage'+flag)[0].style.display = "none";
+                    }
+                    function showDiv(flag){
+                        document.getElementsByClassName('bgImage'+flag)[0].style.display = "inline";
+                    }
+                    function loadBg(flag){
+                        document.getElementsByClassName('bgImage')[0].className = "bgImage"+flag.trim();
+                        this.flag = flag;
+                    }
+                    function changeBg(){
+                        switch(changeCounter % 2){
+                            case 0:
+                                document.getElementsByClassName('bgImage'+flag.trim())[0].className = "bgImageSnow";
+                                flag = "Snow";
+                               // document.getElementsByClassName('bgImageSnow')[0].className = "bgImageBuilding";
+                               
+                                break;
+                            case 1:
+                                document.getElementsByClassName('bgImage'+flag.trim())[0].className = "bgImageBuilding";
+                                flag = "Building";
+                                //document.getElementsByClassName('bgImageBuilding')[0].className = "bgImageSnow";
+                                
+                                break;
+                            case 2:
+                                // document.getElementsByClassName('bgImage')[0].style.backgroundImage = "url(res/building.jpg)";
+                                break;
+                            default:
+                                break;
+                        }
+                        changeCounter++;
+                    }
+                    
+                </script>
+        </body>
+</html>
