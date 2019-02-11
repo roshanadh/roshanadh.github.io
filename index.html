@@ -2,13 +2,13 @@
     <head>
         <title>Roshan Adhikari</title>
         <style>
-           .bgImageBuilding{
+           #bgImageBuilding{
                 background-image: url(res/building.jpg);
             }
-            .bgImageSnow{
+            #bgImageSnow{
                 background-image: url(res/snow.jpg);
             }
-            .bgImageBuilding, .bgImageSnow{
+            #bgImageBuilding, #bgImageSnow{
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -43,10 +43,13 @@
                 font-size: large;
             }
         </style>
+         
         
     </head>
         <body onload="loadBg('Building')" onclick="changeBg()">
-            <div class='bgImage'></div>
+            <div id='bgImage'></div>
+            <div id='bgImageBuilding'></div>
+            <div id='bgImageSnow'></div>
             <div class='content'>
                 <div class='menuBar'>
                     <!-- <a href='https://roshanadh.github.io/' class='menuLink'>Home</a> | <a href='https://roshanadh.github.io/' class='menuLink'>Contact Me</a> -->
@@ -61,30 +64,39 @@
                     I am an aspiring Software Developer.
                 </p>
             </div>
+            
             <script>
                     var changeCounter = 0;
                     var flag = '';
+    
+                    window.onload = hideDiv('Snow');
                     function hideDiv(flag){
-                        document.getElementsByClassName('bgImage'+flag)[0].style.display = "none";
+                        document.getElementById('bgImage'+flag).style.display = "none";
                     }
                     function showDiv(flag){
-                        document.getElementsByClassName('bgImage'+flag)[0].style.display = "inline";
+                        document.getElementById('bgImage'+flag).style.display = "visible";
+                        console.log(document.getElementById('bgImage'+flag).style.display);
                     }
                     function loadBg(flag){
-                        document.getElementsByClassName('bgImage')[0].className = "bgImage"+flag.trim();
+                        hideDiv('Snow');
+                        document.getElementById('bgImage').id = "bgImageBuilding";
+                        hideDiv('Snow');
                         this.flag = flag;
                     }
                     function changeBg(){
                         switch(changeCounter % 2){
                             case 0:
-                                document.getElementsByClassName('bgImage'+flag.trim())[0].className = "bgImageSnow";
+                                showDiv('Snow');
+                                document.getElementById('bgImage'+flag.trim()).id = "bgImageSnow";
                                 flag = "Snow";
-                               // document.getElementsByClassName('bgImageSnow')[0].className = "bgImageBuilding";
+                                hideDiv('Building');
                                
                                 break;
                             case 1:
-                                document.getElementsByClassName('bgImage'+flag.trim())[0].className = "bgImageBuilding";
+                                showDiv('Building');
+                                document.getElementById('bgImage'+flag.trim()).id = "bgImageBuilding";
                                 flag = "Building";
+                                hideDiv('Snow');
                                 //document.getElementsByClassName('bgImageBuilding')[0].className = "bgImageSnow";
                                 
                                 break;
