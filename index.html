@@ -2,122 +2,160 @@
     <head>
         <title>Roshan Adhikari</title>
         <style>
-           #bgImageBuilding{
-                background-image: url(res/building.jpg);
+            body{
+                background-image: linear-gradient(-60deg, black 0%, rgba(12, 3, 32, 0.952) 100%);
+                background-size: 500%;
+                text-align: center;
+                animation: flow 20s ease-in-out infinite;
             }
-            #bgImageSnow{
-                background-image: url(res/snow.jpg);
+                @keyframes flow{
+                0%{
+                    background-position: 0% 50%;
+                }
+                50%{
+                    background-position: 100% 50%;
+                }
+                100%{
+                    background-position: 0% 50%;
+                }
             }
-            #bgImageBuilding, #bgImageSnow{
-                height: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+            .firstPage, .secondPage{
                 
-                filter: blur(8px);
-            }            
-            .content{
-                border-radius: 20px;
-                display: inline-block;
-                background-color: rgba(0, 0, 0, 0.009);
-                position: absolute;
-                top: 50%;
-                left: 50%;
+                font-size: xx-large;
+                color: white;
+                font-family: Fira Code, 'Courier New', Courier, monospace;
+                page-break-after: always;
+                
+                padding-bottom: 20%;
+                
+            }
+            .firstPage{
+                margin-left: 10%;
+                margin-top: 15%;
+                
+            }
+            .secondPage{
+                text-align: left;
+                margin-left: 5%;
             }
             .menuBar{
-                
-                background-color: cornflowerblue;
+                position: sticky;
+                top: 0;
+                background-color: transparent;
             }
             .menuLink{
+                font-family: Fira Code, 'Courier New', Courier, monospace; 
                 color: inherit;
                 text-decoration: none;
             }
             .helloWorld{
-                font-size: 50px;
-                color: cornflowerblue;
+                font-size: 100px;
+                
             }
             .intro, .helloWorld{
                 font-family: Fira Code, 'Courier New', Courier, monospace;
-                text-align: right;
+                text-align: left;
             }
             .intro{
                 font-size: large;
             }
             #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
-                display: inline-block;
+                animation: flow 10s ease-in-out infinite;
+                background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-size: 500%;
                 cursor: pointer;
+                display: inline-block;
                 transition: 2s ease-in-out;
             }
             #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
-                transform: translate(0, -20px);
+                transform: translateY(-20px);              
             }
+            a:hover .bottom{
+                border-color: white;
+                transform: translateY(20px);
+            }
+            a:hover .bottom:after{
+                border-top-color:white;
+                border-right-color:white;
+            }
+            .button-wrapper{
+                position: absolute;
+                bottom: 10%;
+                width: 300px;
+                left: 50%;
+                margin-left: -150px; 
+            }
+            .bottom {
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                border: 0.1em solid white;
+                border-radius: 50%;
+                margin-left: 0.75em;
+                background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #d65b35);
+                background-size: 200%;
+                transition: 1s ease-in-out;
+                animation: flow 10s ease-in-out infinite;
+                
+            }   
+            .bottom:after {
+                content: '';
+	            display: inline-block;
+                margin-top: 0.6em;
+                width: 0.5em;
+                height: 0.5em;
+                border-top: 0.1em solid white;
+                border-right: 0.1em solid white;
+                -moz-transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+        }
+      
         </style>
          
         
     </head>
         <body onload="loadBg('Building')" onclick="changeBg()">
-            <div id='bgImage'></div>
-            <div id='bgImageBuilding'></div>
-            <div id='bgImageSnow'></div>
-            <div class='content'>
-                <div class='menuBar'>
-                    <!-- <a href='https://roshanadh.github.io/' class='menuLink'>Home</a> | <a href='https://roshanadh.github.io/' class='menuLink'>Contact Me</a> -->
-                </div>
-                <h2 class='helloWorld'>
-                    <span id='h'>h</span><span id='e'>e</span><span id='l1'>l</span><span id='l2'>l</span><span id='o1'>o</span> <span id='w'>w</span><span id='o2'>o</span><span id='r'>r</span><span id='l3'>l</span><span id='d'>d</span><span id='ex'>!</span>
-                </h2>
-                <p class='intro'>
-                    <span id='name'>
-                        I am Roshan Adhikari.<br>
-                    </span>
-                    I am an aspiring Software Developer.
-                </p>
+            <!-- <div id='bgImage'></div> -->
+            <!-- <div id='bgImageBuilding'></div> -->
+            <!-- <div id='bgImageSnow'></div> -->
+            <div class='menuBar'>
+                    <!-- <a href='https://roshanadh.github.io/' class='menuLink'>Home</a> | <a href='https://roshanadhikary.com.np/' class='menuLink'>My Blog</a> -->
             </div>
-            
-            <script>
-                    var changeCounter = 0;
-                    var flag = '';
-                    var ch = '';
-    
-                    window.onload = hideDiv('Snow');
-                    function hideDiv(flag){
-                        document.getElementById('bgImage'+flag).style.display = "none";
-                    }
-                    function showDiv(flag){
-                        document.getElementById('bgImage'+flag).style.display = "visible";
-                        console.log(document.getElementById('bgImage'+flag).style.display);
-                    }
-                    function loadBg(flag){
-                        hideDiv('Snow');
-                        document.getElementById('bgImage').id = "bgImageBuilding";
-                        hideDiv('Snow');
-                        this.flag = flag;
-                    }
-                    function changeBg(){
-                        switch(changeCounter % 2){
-                            case 0:
-                                showDiv('Snow');
-                                document.getElementById('bgImage'+flag.trim()).id = "bgImageSnow";
-                                flag = "Snow";
-                                hideDiv('Building');
-                               
-                                break;
-                            case 1:
-                                showDiv('Building');
-                                document.getElementById('bgImage'+flag.trim()).id = "bgImageBuilding";
-                                flag = "Building";
-                                hideDiv('Snow');
-                                //document.getElementsByClassName('bgImageBuilding')[0].className = "bgImageSnow";
-                                
-                                break;
-                            case 2:
-                                // document.getElementsByClassName('bgImage')[0].style.backgroundImage = "url(res/building.jpg)";
-                                break;
-                            default:
-                                break;
-                        }
-                        changeCounter++;
-                    }                    
-                </script>
+            <div class='content'>
+                <div class='firstPage'>
+                    <h2 class='helloWorld'>
+                        <span id='h'>h</span><span id='e'>e</span><span id='l1'>l</span><span id='l2'>l</span><span id='o1'>o</span> <span id='w'>w</span><span id='o2'>o</span><span id='r'>r</span><span id='l3'>l</span><span id='d'>d</span><span id='ex'>!</span>
+                    </h2>
+                    <p class='intro'>
+                        <span id='name'>
+                            I am Roshan Adhikari.<br>
+                            I like working in Java, and Node.js excites me!<br>
+                        </span>
+                    </p>
+                </div>
+
+                <div class='button-wrapper'>
+                    <a href="#secondPage">
+                        <span class="bottom"></span>
+                    </a>
+                </div>
+
+                <div class='secondPage' id='secondPage'>
+                    <h2 class="projectsHeader">Projects</h2>
+                    <p>
+                        <nav>
+                            <ul>
+                                <li>GroceryDesk</li>
+                                <li>sort-files</li>
+                                <li>YIFY RSS</li>
+                            </ul>
+                        </nav>
+                    </p>
+                </div>
+            </div>
         </body>
 </html>
