@@ -21,7 +21,6 @@ body{
     color: white;
     font-family: Fira Code, 'Courier New', Courier, monospace;
     page-break-after: always;
-    
     padding-bottom: 20%;
     
 }
@@ -31,8 +30,9 @@ body{
     
 }
 .secondPage{
-    text-align: left;
-    margin-left: 5%;
+    text-align: center;
+    margin-left: 0;
+    scroll-behavior: smooth;
 }
 .menuBar{
     position: sticky;
@@ -68,6 +68,27 @@ body{
 }
 #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
     transform: translateY(-20px);              
+}
+#groceryDesk, #sortFiles, #yifyRss{
+    display: inline-block;
+    border-radius: 2px;
+    border-left: 2px solid blue;
+    padding-left: 2%;
+    margin-right: 10%;
+    padding-bottom: 2%;
+}
+.checkoutBtn{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid green;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+}
+.checkoutBtn:hover{
+    /* TODO : apply gradient on button border using nested divs. And maybe add some white shadow too */
 }
 a:hover .bottom{
     border-color: white;
