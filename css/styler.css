@@ -1,8 +1,8 @@
 body{
-    background-image: linear-gradient(to bottom, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
-    background-size: 500%;
+    background: linear-gradient(to bottom right, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
+    background-size: 300%;
     text-align: center;
-    animation: flow 20s ease-in-out infinite;
+    animation: flow 10s ease-in-out infinite;
 }
 @keyframes flow{
     0%{
@@ -14,6 +14,9 @@ body{
     100%{
         background-position: 0% 50%;
     }
+}
+span a{
+    text-decoration: none;
 }
 .content{
     scroll-behavior: smooth;
@@ -39,7 +42,6 @@ body{
     margin-top: 8%;
     margin-left: 2%;
     margin-right: 2%;
-    scroll-behavior: smooth;
 }
 .menuBar{
     position: sticky;
@@ -81,9 +83,9 @@ body{
     border-radius: 2px;
     padding-left: 2%;
     padding-bottom: 2%; 
-    background-image: linear-gradient(to bottom, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
-    background-size: 500%;
-    animation: flow 20s ease-in-out infinite;
+    background: linear-gradient(to top right, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
+    background-size: 300%;
+    animation: flow 10s ease-in-out infinite;
     margin-top: 0;
     margin-bottom: 0px;
     margin-left: 2px;
@@ -125,7 +127,7 @@ body{
     height: 90px;
 }
 #nodejsLogo{
-    width: 150px;
+    width: 160px;
     height: 95px;
 }
 #androidLogo{
@@ -201,4 +203,25 @@ a:hover .bottom:after{
     -moz-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
+}
+.footer{
+    background: rgba(255, 0, 0, 0.05);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: static;
+    bottom: 2px;
+    text-align: center;
+    padding: 8px 0px;
+    color: white;
+}
+.footerText{
+    font-family: Fira Code, 'Courier New', Courier, monospace;
+}
+.linkToMe{
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 500%;
+    animation: flow 3s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
