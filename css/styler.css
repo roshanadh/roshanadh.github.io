@@ -35,6 +35,8 @@ body{
 .secondPage{
     align-content: center;
     text-align: center;
+    padding-top: 2%;
+    margin-top: 8%;
     margin-left: 2%;
     margin-right: 2%;
     scroll-behavior: smooth;
@@ -77,18 +79,39 @@ body{
 #groceryDesk, #sortFiles, #yifyRss{
     display: inline-block;
     border-radius: 2px;
-    /* TODO : apply linear background to the 'border' like in the 'buttons' */
-    border-left: 2px solid blue;
     padding-left: 2%;
-    margin-top: 6%;
-    margin-bottom: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 2%; 
+    background-image: linear-gradient(to bottom, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
+    background-size: 500%;
+    animation: flow 20s ease-in-out infinite;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    margin-right: 0px;    
 }
-.secondPage #groceryDesk, #sortFiles, #yifyRss{
-    margin-left: 8%;
+.secondPage .projectContainer{
+    margin-right: 8%;
 }
-.secondPage #groceryDesk:first-child{
-    margin-left: 0;
+.secondPage .projectContainer:last-child{
+    margin-right: 0;
+}
+.projectContainer{
+    border-radius: 2px;
+    display: inline-block;
+    background: linear-gradient(to bottom right, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    animation: flow 5s ease-in-out infinite;
+    border: none;
+    padding: 0;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.projectContainer:hover{
+    background: linear-gradient(to bottom left, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    animation: flow 1s ease-out infinite;
 }
 .logoContainer{
     padding-top: 5px;
@@ -103,7 +126,7 @@ body{
 }
 #nodejsLogo{
     width: 150px;
-    height: 90px;
+    height: 95px;
 }
 #androidLogo{
     width: 80px;
@@ -113,16 +136,21 @@ body{
     display: inline-block;
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
     background-size: 300%;
+    border-radius: 5px;
     animation: flow 10s ease-in-out infinite;
     border: none;
     color: white;
     font-size: 16px;
-    margin: 4px 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4%;
+    margin-right: 4px;
     cursor: pointer;
-    /* padding: 10px 10px; */
+    padding: 0;
 }
 .spanElement{
     display: inline-block;
+    border-radius: 5px;
     background: linear-gradient(to bottom, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
     background-size: 500%;
     animation: flow 20s ease-in-out infinite;
@@ -131,7 +159,7 @@ body{
     padding: 15px 15px;
 }
 .spanWrapper:hover{
-    animation: flow 1s infinite;
+    animation: flow 1s ease-out infinite;
     
 }
 a:hover .bottom{
