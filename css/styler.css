@@ -166,7 +166,7 @@ span a{
 }
 a:hover .bottom{
     border-color: white;
-    transform: translateY(20px);
+    transform: translateY(10px);
 }
 a:hover .bottom:after{
     border-top-color:white;
