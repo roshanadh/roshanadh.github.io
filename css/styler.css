@@ -68,7 +68,7 @@ span a{
     padding-bottom: 2%; 
     background-color: rgb(3, 0, 8);
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: -5px;
     margin-left: 2px;
     margin-right: 0px;  
     font-size: 25px;  
@@ -150,11 +150,11 @@ a:hover .bottom:after{
     border-right-color:white;
 }
 .button-wrapper{
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     bottom: 10%;
-    width: 300px;
     left: 50%;
-    margin-left: -150px; 
+    
 }
 .bottom {
     display: inline-block;
@@ -167,7 +167,6 @@ a:hover .bottom:after{
     background-size: 200%;
     transition: 1s ease-in-out;
     animation: flow 10s ease-in-out infinite;
-    
 }   
 .bottom:after {
     content: '';
