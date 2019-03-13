@@ -1,8 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background: linear-gradient(to bottom right, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
+    background-color: rgb(3, 0, 8);
     background-size: 300%;
     text-align: center;
-    animation: flow 10s ease-in-out infinite;
 }
 @keyframes flow{
     0%{
@@ -22,7 +24,6 @@ span a{
     scroll-behavior: smooth;
 }
 .firstPage, .secondPage{
-    
     font-size: xx-large;
     color: white;
     font-family: Fira Code, 'Courier New', Courier, monospace;
@@ -78,37 +79,36 @@ span a{
 #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
     transform: translateY(-20px);              
 }
-#groceryDesk, #sortFiles, #yifyRss{
+#groceryDesk, #sortFiles, #yifyRss, #twitterQotd, #chatterIo{
     display: inline-block;
+    width: auto;
     border-radius: 2px;
     padding-left: 2%;
     padding-bottom: 2%; 
-    background: linear-gradient(to top right, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
-    background-size: 300%;
-    animation: flow 10s ease-in-out infinite;
-    margin-top: 0;
+    background-color: rgb(3, 0, 8);
+    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 2px;
-    margin-right: 0px;    
+    margin-right: 0px;  
+    font-size: 20pt;  
 }
 .secondPage .projectContainer{
     margin-right: 8%;
 }
 .secondPage .projectContainer:last-child{
-    margin-right: 0;
+    margin-left: 3px;
 }
 .projectContainer{
+    color:  #f2f1ef;
     border-radius: 2px;
+    width: fit-content;
     display: inline-block;
     background: linear-gradient(to bottom right, #904e95, #904e95, #e73c7e, #ee7752);
     background-size: 300%;
     animation: flow 5s ease-in-out infinite;
     border: none;
     padding: 0;
-    margin-top: 6px;
-    margin-bottom: 50px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin: 1em auto;
 }
 .projectContainer:hover{
     background: linear-gradient(to bottom left, #904e95, #904e95, #e73c7e, #ee7752);
@@ -122,7 +122,6 @@ span a{
    padding: 0;
 }
 #javaLogo{
-    
     width: 60px;
     height: 90px;
 }
@@ -141,8 +140,8 @@ span a{
     border-radius: 5px;
     animation: flow 10s ease-in-out infinite;
     border: none;
-    color: white;
-    font-size: 16px;
+    color: #f2f1ef;
+    font-size: 12pt;
     margin-top: 4px;
     margin-bottom: 4px;
     margin-left: 4%;
@@ -153,10 +152,7 @@ span a{
 .spanElement{
     display: inline-block;
     border-radius: 5px;
-    background: linear-gradient(to bottom, rgb(9, 10, 20) 0%, rgba(12, 3, 32, 0.952) 100%);
-    background-size: 500%;
-    animation: flow 20s ease-in-out infinite;
-    background-clip: border-box;
+    background-color: rgb(3, 0, 8);
     margin: 2px 2px;
     padding: 15px 15px;
 }
