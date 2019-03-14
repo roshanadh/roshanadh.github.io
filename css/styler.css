@@ -86,6 +86,9 @@ span a{
 .secondPage .projectContainer:last-child{
     margin-left: 3px;
 }
+.secondPage{
+    margin-bottom: 0;
+}
 .projectContainer{
     color:  #f2f1ef;
     border-radius: 2px;
@@ -184,45 +187,6 @@ a:hover .bottom:after{
     -moz-transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
-}
-.top-button-immediate-wrapper{
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 5%;
-    left: 50%;
-}
-a:hover .top{
-    transform: translateY(-10px);
-}
-a:hover .top:after{
-    border-top-color:white;
-    border-right-color:white;
-}
-.top {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    border: none;
-    border-radius: 50%;
-    margin-top: 5em;
-    margin-left: 0.75em;
-    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #d65b35);
-    background-size: 200%;
-    transition: 1s ease-in-out;
-    animation: flow 10s ease-in-out infinite;
-}   
-.top:after {
-    content: '';
-    display: inline-block;
-    margin-top: 0em;
-    margin-bottom: 0.25em;
-    width: 0.25em;
-    height: 0.25em;
-    border-top: 0.05em solid white;
-    border-right: 0.05em solid white;
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
 }
 .footer{
     background: rgba(255, 0, 0, 0.05);
