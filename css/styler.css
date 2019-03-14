@@ -92,7 +92,7 @@ span a{
 .projectContainer{
     color:  #f2f1ef;
     border-radius: 2px;
-    width: fit-content;
+    max-width: fit-content;
     display: inline-block;
     background: linear-gradient(to bottom right, #904e95, #904e95, #e73c7e, #ee7752);
     background-size: 300%;
@@ -122,7 +122,7 @@ span a{
     margin: 10px;
     padding: 10px;
     position: absolute;
-    z-index: 1000;
+    z-index: 5;
     width:200px;
     min-height:50px;
 }
