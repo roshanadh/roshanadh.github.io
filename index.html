@@ -26,7 +26,7 @@
     </head>
         <body>
             <div class='content'>
-                <div class='firstPage'>
+                <div class='firstPage' id="firstPage">
                     <h2 class='helloWorld'>
                         <span id='h'>h</span><span id='e'>e</span><span id='l1'>l</span><span id='l2'>l</span><span id='o1'>o</span> <span id='w'>w</span><span id='o2'>o</span><span id='r'>r</span><span id='l3'>l</span><span id='d'>d</span><span id='ex'>!</span>
                     </h2>
@@ -38,7 +38,7 @@
                     </p>
                 </div>
 
-                <div class='button-wrapper'>
+                <div class='bottom-button-wrapper'>
                     <a href="#secondPage">
                         <span class="bottom"></span>
                     </a>
@@ -69,6 +69,10 @@
                                     <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://github.com/roshanadh/yify-rss','_blank')">Checkout the project!</span></span>
                                 </span>
                             </span>
+
+                            <!-- Main wrapper for sticky element: Top button, begins -->
+                            <div class="top-button-main-wrapper">
+
                             <span class="projectContainer">
                                 <span id="twitterQotd">
                                     <p>twitter-qotd</p>
@@ -83,6 +87,15 @@
                                     <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://github.com/roshanadh/chatter.io','_blank')">Checkout the project!</span></span>
                                 </span>
                             </span>
+                            <!-- Immediate wrapper for sticky element: Top button, begins -->
+                            <div class='top-button-immediate-wrapper'>
+                                <a href="#firstPage">
+                                    <span class="top"></span>
+                                </a>
+                            </div><!-- Immediate wrapper for sticky element: Top button, ends -->
+            
+                        </div> <!-- Main wrapper for sticky element: Top button, ends -->
+
                         </nav>
                     </p>
                 </div>
