@@ -58,6 +58,8 @@ span a{
     transition: 2s ease-in-out;
 }
 .projectsHeader{
+    padding-top: 25px;
+    padding-bottom: 15px;
     position: sticky;
     top: 0px;
     height: auto;
