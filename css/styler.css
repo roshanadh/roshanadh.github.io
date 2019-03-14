@@ -57,6 +57,13 @@ span a{
     display: inline-block;
     transition: 2s ease-in-out;
 }
+.projectsHeader{
+    position: sticky;
+    top: 0px;
+    height: auto;
+    color: rgba(231, 60, 126, 0.9);
+    background-color: rgba(3, 0, 8, 1);
+}
 #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
     transform: translateY(-20px);              
 }
