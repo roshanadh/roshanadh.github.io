@@ -109,6 +109,23 @@ span a{
 .logoContainer{
     padding-top: 5px;
 }
+.logoContainer:hover .tooltip-text {
+    display: block;
+}
+.tooltip-text {
+    display: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 0, 0, 1);
+    color: #fff9de;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    width:200px;
+    min-height:50px;
+}
 #javaLogo, #nodejsLogo, #androidLogo{
    padding: 0;
 }
