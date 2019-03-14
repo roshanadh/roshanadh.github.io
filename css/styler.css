@@ -16,6 +16,15 @@ body{
         background-position: 0% 50%;
     }
 }
+@keyframes throb{
+    0%{
+        font-size: 12px;
+    }
+    
+    100%{
+        font-size: 16px;
+    }
+}
 span a{
     text-decoration: none;
 }
@@ -220,6 +229,10 @@ a:hover .bottom:after{
 .footerText{
     font-family: Fira Code, 'Courier New', Courier, monospace;
 }
+.heartUnicode{
+    animation: throb 1s ease-in-out infinite;
+    animation-direction: alternate;
+}
 .linkToMe{
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
     background-size: 500%;
@@ -227,4 +240,6 @@ a:hover .bottom:after{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    letter-spacing: 0.05em;
 }
