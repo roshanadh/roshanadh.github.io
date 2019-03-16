@@ -16,15 +16,6 @@ body{
         background-position: 0% 50%;
     }
 }
-@keyframes throb{
-    0%{
-        font-size: 12px;
-    }
-    
-    100%{
-        font-size: 16px;
-    }
-}
 span a{
     text-decoration: none;
 }
@@ -236,10 +227,8 @@ a:hover .bottom:after{
 .linkToMe{
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
     background-size: 500%;
-    animation: flow 3s ease-in-out infinite;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 20px;
-    letter-spacing: 0.05em;
+    font-size: 18px;
 }
