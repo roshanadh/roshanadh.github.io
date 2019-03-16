@@ -118,7 +118,7 @@ span a{
     display: none;
     font-size: 16px;
     text-align: center;
-    background:  rgba(255, 0, 0, 0.9);
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
     color: #fff9de;
     border-radius: 15px;
     margin: 10px;
