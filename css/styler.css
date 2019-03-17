@@ -43,9 +43,18 @@ span a{
     font-family: Fira Code, 'Courier New', Courier, monospace;
     text-align: left;
 }
-.intro{
-    font-size: large;
-}
+@media screen and (min-width: 701px) {
+    .intro{
+      font-size: 18px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 700px) {
+    .intro{
+      font-size: 25px;
+    }
+  }
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
     animation: flow 10s ease-in-out infinite;
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
