@@ -63,7 +63,7 @@ span a{
     padding-bottom: 20%; 
 }
 .firstPage{
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: 10%; 
 }
 .secondPage{
@@ -73,7 +73,6 @@ span a{
     margin-right: 2%;
 }
 .helloWorld{
-    margin-left: 0%;
     font-size: 100px;
 }
 .intro, .helloWorld{
@@ -81,8 +80,10 @@ span a{
     text-align: left;
 }
 .intro{
-    margin-left: 5%;
     font-size: 19px;
+}
+#hello, #world{
+    display: inline-block;
 }
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
     animation: flow 10s ease-in-out infinite;
