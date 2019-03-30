@@ -28,6 +28,30 @@ body{
         -webkit-transform: translateY(4px) rotate(135deg);
     }
 }
+@keyframes swingLeft{
+    0%{
+        transform: translateX(-4px) rotate(-45deg);
+        -moz-transform: translateX(-4px) rotate(-45deg);
+        -webkit-transform: translateX(-4px) rotate(-45deg);
+    }
+    100%{
+        transform: translateX(4px) rotate(-45deg);
+        -moz-transform: translateX(4px) rotate(-45deg);
+        -webkit-transform: translateX(4px) rotate(-45deg);
+    }
+}
+@keyframes swingRight{
+    0%{
+        transform: translateX(4px) rotate(45deg);
+        -moz-transform: translateX(4px) rotate(45deg);
+        -webkit-transform: translateX(4px) rotate(45deg);
+    }
+    100%{
+        transform: translateX(-4px) rotate(45deg);
+        -moz-transform: translateX(-4px) rotate(45deg);
+        -webkit-transform: translateX(-4px) rotate(45deg);
+    }
+}
 span a{
     text-decoration: none;
 }
@@ -193,6 +217,8 @@ span a{
     
 }
 #moreProjectsLink{
+    margin-left: 20px;
+    margin-right: 20px;
     display: inline-block;
     font-size: 25px;
     text-decoration: none;
@@ -232,7 +258,6 @@ a:hover .bottom:after{
     height: 5em;
     background-size: 200%;
     transition: 1s ease-in-out;
-    animation: flow 10s ease-in-out infinite;
     overflow-x: hidden;
 }   
 .bottom:after {
@@ -244,6 +269,44 @@ a:hover .bottom:after{
     border-top: 0.1em solid #f2f1ef;
     border-right: 0.1em solid #f2f1ef;
     animation: jump 2s ease-in-out infinite;
+    animation-direction: alternate;
+}
+.sideLeft {
+    width: 2em;
+    height: 2em;
+    background-size: 200%;
+    transition: 1s ease-in-out;
+    overflow-x: hidden;
+}   
+.sideLeft:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.6em;
+    margin-bottom: 0.1em;
+    width: 0.2em;
+    height: 0.2em;
+    border-top: 0.05em solid #f2f1ef;
+    border-right: 0.05em solid #f2f1ef;
+    animation: swingRight 1s ease-in-out infinite;
+    animation-direction: alternate;
+}
+.sideRight {
+    width: 2em;
+    height: 2em;
+    background-size: 200%;
+    transition: 1s ease-in-out;
+    overflow-x: hidden;
+}   
+.sideRight:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.6em;
+    margin-bottom: 0.1em;
+    width: 0.2em;
+    height: 0.2em;
+    border-top: 0.05em solid #f2f1ef;
+    border-left: 0.05em solid #f2f1ef;
+    animation: swingLeft 1s ease-in-out infinite;
     animation-direction: alternate;
 }
 .footer{
