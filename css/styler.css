@@ -217,8 +217,8 @@ a:hover .bottom{
     transform: translateY(10px);
 }
 a:hover .bottom:after{
-    border-top-color:white;
-    border-right-color:white;
+    border-top-color: #f2f1ef;
+    border-right-color:#f2f1ef;
 }
 .bottom-button-wrapper{
     position: -webkit-sticky;
@@ -241,8 +241,8 @@ a:hover .bottom:after{
     margin-top: 0.6em;
     width: 1em;
     height: 1em;
-    border-top: 0.1em solid white;
-    border-right: 0.1em solid white;
+    border-top: 0.1em solid #f2f1ef;
+    border-right: 0.1em solid #f2f1ef;
     animation: jump 2s ease-in-out infinite;
     animation-direction: alternate;
 }
@@ -254,14 +254,10 @@ a:hover .bottom:after{
     bottom: 2px;
     text-align: center;
     padding: 8px 0px;
-    color: white;
+    color: #f2f1ef;
 }
 .footerText{
     font-family: Fira Code, 'Courier New', Courier, monospace;
-}
-.heartUnicode{
-    animation: throb 1s ease-in-out infinite;
-    animation-direction: alternate;
 }
 .linkToMe{
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
