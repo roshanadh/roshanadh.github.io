@@ -63,7 +63,7 @@ span a{
     padding-bottom: 20%; 
 }
 .firstPage{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 10%; 
 }
 .secondPage{
@@ -73,6 +73,7 @@ span a{
     margin-right: 2%;
 }
 .helloWorld{
+    margin-left: 0%;
     font-size: 100px;
 }
 .intro, .helloWorld{
@@ -80,6 +81,7 @@ span a{
     text-align: left;
 }
 .intro{
+    margin-left: 5%;
     font-size: 19px;
 }
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
@@ -120,13 +122,11 @@ span a{
     font-size: 25px;  
 }
 .secondPage .projectContainer{
-    margin-right: 8%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .secondPage .projectContainer:last-child{
-    margin-right: 5px;
-}
-.secondPage .projectContainer:nth-child(3){
-    margin-right: 5px;
+    margin-right: 40px;
 }
 .secondPage{
     margin-bottom: 0;
