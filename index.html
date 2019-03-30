@@ -93,15 +93,14 @@
                 <span class="footerText">Made with <span class="heartUnicode">❤️</span> by <a class="linkToMe" href="https://github.com/roshanadh" target="_blank">Roshan</a></span>
             </div>
             <script>
-                    var tooltip = document.querySelectorAll('.tooltip-text');
-                    document.addEventListener('mousemove', fn, false);
-                    function fn(e) {
-                        for (var i=tooltip.length; i--;) {
-                            tooltip[i].style.left = e.pageX + 'px';
-                            tooltip[i].style.top = e.pageY + 'px';
-                        }
+                var tooltip = document.querySelectorAll('.tooltip-text');
+                document.addEventListener('mousemove', fn, false);
+                function fn(e) {
+                    for (var i = tooltip.length; i--;) {
+                        tooltip[i].style.left = e.pageX + 'px';
+                        tooltip[i].style.top = e.pageY + 'px';
                     }
-
+                }
                 </script>
         </body>
 </html>

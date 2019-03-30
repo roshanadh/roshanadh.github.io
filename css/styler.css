@@ -131,7 +131,8 @@ span a{
     display: none;
     font-size: 16px;
     text-align: center;
-    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-color: rgba(36, 37, 42, 0.9);
+    /* background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752); */
     opacity: 0.9;
     color: #fff9de;
     border-radius: 15px;
