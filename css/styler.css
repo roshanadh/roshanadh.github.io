@@ -106,7 +106,7 @@ span a{
 #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
     transform: translateY(-20px);              
 }
-#groceryDesk, #sortFiles, #yifyRss, #twitterQotd, #chatterIo, #twitterWotd, #batteryNotifier{
+#groceryDesk, #sortFiles, #yifyRss, #twitterQotd, #chatterIo, #batteryNotifier{
     display: inline-block;
     width: auto;
     border-radius: 2px;
