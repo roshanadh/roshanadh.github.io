@@ -86,10 +86,6 @@ span a{
     display: inline-block;
 }
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 300%;
     cursor: pointer;
     display: inline-block;
     transition: 2s ease-in-out;
@@ -97,47 +93,91 @@ span a{
 /* To display gradient animation over the whole text */
 #h{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 500%;
     animation: flow 15s ease-in-out infinite;
 }
 #e{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 16s ease-in-out infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 15.5s ease-in-out infinite;
 }
 #l1{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 17s ease-in-out infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 16s ease-in-out infinite;
 }
 #l2{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 18s ease-in-out infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 16.5s ease-in-out infinite;
 }
 #o1{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 19s ease-in-out infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 17s ease-in-out infinite;
 }
 #w{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 20s ease-in-out infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 17.2s ease-in-out infinite;
 }
 #o2{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 21s ease-in-out infinite;
+     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 17.5s ease-in-out infinite;
 }
 #r{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 22s ease-in-out infinite;
+     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 18s ease-in-out infinite;
 }
 #l3{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 23s ease-in-out infinite;
+     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 18.5s ease-in-out infinite;
 }
 #d{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 24s ease-in-out infinite;
+     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 19s ease-in-out infinite;
 }
 #ex{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-    animation: flow 25s ease-in-out infinite;
+     color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300%;
+    animation: flow 19.5s ease-in-out infinite;
 }
 .projectsHeader{
     font-family: Fira Code, 'Courier New', Courier, monospace;
