@@ -86,51 +86,52 @@ span a{
     display: inline-block;
 }
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
-    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 800%;
+    background-size: 300%;
     cursor: pointer;
     display: inline-block;
     transition: 2s ease-in-out;
 }
 /* To display gradient animation over the whole text */
 #h{
-    animation: flow 10s ease-in-out infinite;
-}
-#e{
-    animation: flow 11s ease-in-out infinite;
-}
-#l1{
-    animation: flow 12s ease-in-out infinite;
-}
-#l2{
-    animation: flow 13s ease-in-out infinite;
-}
-#o1{
-    animation: flow 14s ease-in-out infinite;
-}
-#w{
     animation: flow 15s ease-in-out infinite;
 }
-#o2{
+#e{
     animation: flow 16s ease-in-out infinite;
 }
-#r{
+#l1{
     animation: flow 17s ease-in-out infinite;
 }
-#l3{
+#l2{
     animation: flow 18s ease-in-out infinite;
 }
-#d{
+#o1{
     animation: flow 19s ease-in-out infinite;
 }
-#ex{
+#w{
     animation: flow 20s ease-in-out infinite;
+}
+#o2{
+    animation: flow 21s ease-in-out infinite;
+}
+#r{
+    animation: flow 22s ease-in-out infinite;
+}
+#l3{
+    animation: flow 23s ease-in-out infinite;
+}
+#d{
+    animation: flow 24s ease-in-out infinite;
+}
+#ex{
+    animation: flow 25s ease-in-out infinite;
 }
 .projectsHeader{
     font-family: Fira Code, 'Courier New', Courier, monospace;
+    margin-top: 0;
     padding-top: 25px;
     padding-bottom: 15px;
     position: sticky;
@@ -270,7 +271,7 @@ span a{
   
 #moreProjectsLink:hover:after {
     width: 100%;
-    height: 3px;
+    height: 2px;
 }
 a:hover .bottom{
     transform: translateY(10px);
@@ -349,6 +350,7 @@ a:hover .bottom:after{
     position: static;
     bottom: 2px;
     text-align: center;
+    margin-top: 5px;
     padding: 8px 0px;
     color: #f2f1ef;
 }
