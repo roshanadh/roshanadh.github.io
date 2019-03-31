@@ -98,6 +98,7 @@ span a{
     background-clip: text;
     background-size: 500%;
     animation: flow 15s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #e{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -106,6 +107,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 15.5s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #l1{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -114,6 +116,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 16s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #l2{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -122,6 +125,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 16.5s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #o1{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -130,6 +134,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 17s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #w{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -138,6 +143,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 17.2s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #o2{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -146,6 +152,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 17.5s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #r{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -154,6 +161,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 18s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #l3{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -162,6 +170,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 18.5s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #d{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -170,6 +179,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 19s ease-in-out infinite;
+    animation-direction: alternate;
 }
 #ex{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
@@ -178,6 +188,7 @@ span a{
     background-clip: text;
     background-size: 300%;
     animation: flow 19.5s ease-in-out infinite;
+    animation-direction: alternate;
 }
 .projectsHeader{
     font-family: Fira Code, 'Courier New', Courier, monospace;
