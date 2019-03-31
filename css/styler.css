@@ -60,7 +60,7 @@ span a{
     color: #f2f1ef;
     font-family: Fira Code, 'Courier New', Courier, monospace;
     page-break-after: always;
-    padding-bottom: 20%; 
+    padding-bottom: 20px; 
 }
 .firstPage{
     margin-left: 10%;
@@ -68,7 +68,7 @@ span a{
 }
 .secondPage{
     padding-top: 2%;
-    margin-top: 8%;
+    margin-top: 0;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -249,7 +249,7 @@ a:hover .bottom:after{
 .bottom-button-wrapper{
     position: -webkit-sticky;
     position: sticky;
-    bottom: 5%;
+    bottom: 0;
     left: 50%;
 }
 .bottom {
