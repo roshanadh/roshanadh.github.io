@@ -86,15 +86,48 @@ span a{
     display: inline-block;
 }
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
-    animation: flow 10s ease-in-out infinite;
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 500%;
+    background-size: 800%;
     cursor: pointer;
     display: inline-block;
     transition: 2s ease-in-out;
+}
+/* To display gradient animation over the whole text */
+#h{
+    animation: flow 10s ease-in-out infinite;
+}
+#e{
+    animation: flow 11s ease-in-out infinite;
+}
+#l1{
+    animation: flow 12s ease-in-out infinite;
+}
+#l2{
+    animation: flow 13s ease-in-out infinite;
+}
+#o1{
+    animation: flow 14s ease-in-out infinite;
+}
+#w{
+    animation: flow 15s ease-in-out infinite;
+}
+#o2{
+    animation: flow 16s ease-in-out infinite;
+}
+#r{
+    animation: flow 17s ease-in-out infinite;
+}
+#l3{
+    animation: flow 18s ease-in-out infinite;
+}
+#d{
+    animation: flow 19s ease-in-out infinite;
+}
+#ex{
+    animation: flow 20s ease-in-out infinite;
 }
 .projectsHeader{
     font-family: Fira Code, 'Courier New', Courier, monospace;
