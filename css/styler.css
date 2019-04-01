@@ -245,16 +245,10 @@ span a{
 }
 #groceryDesk, #sortFiles, #yifyRss, #twitterQotd, #chatterIo, #batteryNotifier{
     display: inline-block;
-    width: auto;
-    border-radius: 2px;
-    padding-left: 15px;
-    padding-bottom: 2%; 
-    background-color: rgb(3, 0, 8);
-    margin-top: 0px;
-    margin-bottom: -5px;
-    margin-left: 2px;
-    margin-right: 0px;  
     font-size: 25px;  
+}
+nav{
+    align-content: center;
 }
 .secondPage .projectContainer{
     margin-left: 40px;
@@ -263,25 +257,12 @@ span a{
 .secondPage .projectContainer:last-child{
     margin-right: 40px;
 }
-.secondPage{
-    margin-bottom: 0;
-}
 .projectContainer{
     color:  #f2f1ef;
     border-radius: 2px;
     max-width: fit-content;
     display: inline-block;
-    background: linear-gradient(to bottom right, #904e95, #904e95, #e73c7e, #ee7752);
-    background-size: 300%;
-    animation: flow 5s ease-in-out infinite;
-    border: none;
-    padding: 0;
     margin: 1em auto;
-}
-.projectContainer:hover{
-    background: linear-gradient(to bottom left, #904e95, #904e95, #e73c7e, #ee7752);
-    background-size: 300%;
-    animation: flow 1s ease-out infinite;
 }
 .logoContainer{
     padding-top: 5px;
