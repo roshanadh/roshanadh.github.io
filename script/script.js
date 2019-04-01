@@ -1,5 +1,11 @@
 let theme;
 let msgShown = 0;
+let randomSpecifier = Math.random() * 200;
+
+function randomTheme(){
+    theme = randomSpecifier >= 100 ? 'dark' : 'light';
+    toggleTheme();
+}
 
 function setTheme(flag){
     theme = flag;
