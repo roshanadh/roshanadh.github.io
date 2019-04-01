@@ -60,7 +60,6 @@ span a{
     color: #f2f1ef;
     font-family: Fira Code, 'Courier New', Courier, monospace;
     page-break-after: always;
-    padding-bottom: 20px; 
 }
 .firstPage{
     margin-left: 10%;
@@ -375,6 +374,14 @@ a:hover .bottom{
     border-left: 0.05em solid #f2f1ef;
     animation: swingLeft 1s ease-in-out infinite;
     animation-direction: alternate;
+}
+.contactSection{
+    vertical-align: center;
+}
+.contactLogo{
+    margin: 30px;
+    max-width: auto;
+    height: 32px;
 }
 .footer{
     background: rgba(36, 37, 42, 0.2);
