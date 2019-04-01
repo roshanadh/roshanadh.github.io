@@ -64,11 +64,10 @@ span a{
 }
 .firstPage{
     margin-left: 10%;
-    margin-top: 10%; 
+    margin-top: 15%; 
 }
 .secondPage{
     padding-top: 2%;
-    margin-top: 0;
     margin-left: 2%;
     margin-right: 2%;
 }
