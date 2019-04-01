@@ -310,8 +310,7 @@ span a{
     font-size: 22px;
     text-decoration: none;
     color: #f2f1ef;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 }   
 a:hover .bottom{
     transform: translateY(10px);
