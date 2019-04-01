@@ -236,7 +236,6 @@ span a{
     height: auto;
     color: #f2f1ef;
     background-color: rgba(3, 0, 8, 0.9);
-    transition: 0.2s ease-in-out;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
