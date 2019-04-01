@@ -289,7 +289,7 @@ nav{
 .spanWrapper{
     display: inline-block;
     background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
-    background-size: 300%;
+    background-size: 500%;
     border-radius: 40px;
     animation: flow 10s ease-in-out infinite;
     border: none;
@@ -310,7 +310,8 @@ nav{
     padding: 15px 15px;
 }
 .spanWrapper:hover{
-    animation: flow 1s ease-out infinite;
+    animation: flow 0.8s ease-out infinite;
+    animation-direction: alternate;
 }
 #moreProjectsLink{
     margin-left: 20px;
