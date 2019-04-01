@@ -40,7 +40,12 @@
     </head>
         <body onload="setTheme('dark')">
             <div id='themeToggle-div'>
-                <img class="themeIndicator" src="res/sun.png" alt="Sun" onclick="toggleTheme()">
+                <span>
+                    <span id="suitYourEyes">
+                        suit your eyes >
+                    </span>
+                    <img class="themeIndicator" src="res/sun.png" alt="Sun" onclick="toggleTheme()" onmouseover="showMsg()">
+                </span>
             </div>
             <div class='content'>
                 <div class='firstPage' id="firstPage">

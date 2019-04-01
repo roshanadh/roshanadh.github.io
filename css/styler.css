@@ -52,15 +52,43 @@ body{
         -webkit-transform: translateX(-4px) rotate(45deg);
     }
 }
+@keyframes justRight{
+    0%{
+        transform: translateX(4px);
+        -moz-transform: translateX(4px);
+        -webkit-transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(-4px);
+        -moz-transform: translateX(-4px);
+        -webkit-transform: translateX(-4px);
+    }
+}
 #themeToggle-div{
     position: absolute;
     right: 10px;
     top: 10px;
     cursor: pointer;
+    display: table;
+    transition: 2s ease-in-out;
+}
+#suitYourEyes{
+    display: inline-block;
+    background-color: rgba(36, 37, 42, 0.3);
+    border-radius: 5px;
+    color: #f2f1ef;
+    font-family: Fira Code, 'Courier New', Courier, monospace;
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: 15px;
+    padding: 5px 10px;
+    animation: justRight 1s ease-in-out infinite;
+    animation-direction: alternate;
 }
 .themeIndicator{
     width: 40px;
     height: 40px;
+    vertical-align: middle;
 }
 span a{
     text-decoration: none;

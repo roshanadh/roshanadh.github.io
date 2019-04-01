@@ -1,9 +1,29 @@
 let theme;
+let msgShown = 0;
+
 function setTheme(flag){
     theme = flag;
+    var suitYourEyes = document.getElementById('suitYourEyes');
+    setTimeout( () => {
+        suitYourEyes.style.display = "none";
+        msgShown++;
+    }, 5000);
+}
+
+function showMsg(){
+    if(msgShown <= 1){
+        var suitYourEyes = document.getElementById('suitYourEyes');
+        suitYourEyes.style.display = "inline-block";
+        setTimeout( () => {
+            suitYourEyes.style.display = "none";
+            console.log("Hidden");
+            msgShown++;
+        }, 5000);
+    }
 }
 
 function toggleTheme(){
+    var suitYourEyes = document.getElementById('suitYourEyes');
     var firstPage = document.getElementsByClassName('firstPage')[0];
     var secondPage = document.getElementsByClassName('secondPage')[0];
     var projectsHeader = document.getElementById('projectsHeader');
@@ -19,7 +39,6 @@ function toggleTheme(){
     var facebook = document.getElementById('facebook');
     var email = document.getElementById('email');
     var footer = document.getElementsByClassName('footer')[0];
-    var footerText = document.getElementsByClassName('footerText')[0];
     var themeIndicator = document.getElementsByClassName('themeIndicator')[0];
     var bottom = document.getElementsByClassName("bottom")[0];
     var sideLeft = document.getElementsByClassName('sideLeft')[0];
@@ -65,6 +84,7 @@ function toggleTheme(){
         };
 
     if(theme == 'dark'){
+
         // For changing pseudo elements like :after
         bottom.pseudoStyle("after", "border-top", "0.1em solid rgba(3, 0, 8, 0.9)");
         bottom.pseudoStyle("after", "border-right", "0.1em solid rgba(3, 0, 8, 0.9)");
@@ -74,6 +94,8 @@ function toggleTheme(){
         sideRight.pseudoStyle("after", "border-top", "0.1em solid rgba(3, 0, 8, 0.9)");
         sideRight.pseudoStyle("after", "border-left", "0.1em solid rgba(3, 0, 8, 0.9)");
 
+        suitYourEyes.style.backgroundColor = "rgba(238, 238, 238, 1)";
+        suitYourEyes.style.color = "rgba(3, 0, 8, 0.9)";
         themeIndicator.src = "res/moon.png";
         document.body.style.backgroundColor = "#f2f1ef";
         firstPage.style.color = "rgba(3, 0, 8, 0.9)"; 
@@ -103,6 +125,7 @@ function toggleTheme(){
     }
 
     else if(theme == 'light'){
+
         // For changing pseudo elements like :after
         bottom.pseudoStyle("after", "border-top", "0.1em solid #f2f1ef");
         bottom.pseudoStyle("after", "border-right", "0.1em solid #f2f1ef");
@@ -112,6 +135,8 @@ function toggleTheme(){
         sideRight.pseudoStyle("after", "border-top", "0.1em solid #f2f1ef");
         sideRight.pseudoStyle("after", "border-left", "0.1em solid #f2f1ef");
 
+        suitYourEyes.style.backgroundColor = "rgba(36, 37, 42, 0.3)";
+        suitYourEyes.style.color = "#f2f1ef";
         themeIndicator.src = "res/sun.png";
         document.body.style.backgroundColor = "rgb(3, 0, 8)";
         firstPage.style.color = "#f2f1ef"; 
