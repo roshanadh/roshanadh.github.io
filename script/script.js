@@ -105,7 +105,7 @@ function toggleTheme(){
         document.body.style.backgroundColor = "#f2f1ef";
         firstPage.style.color = "rgba(3, 0, 8, 0.9)"; 
         secondPage.style.color = "rgba(3, 0, 8, 0.9)";
-        projectsHeader.style.backgroundColor = "#f2f1ef";
+        projectsHeader.style.backgroundColor = "rgba(242, 241, 239, 0.9)";
         projectsHeader.style.color = "rgba(3, 0, 8, 0.9)";
         groceryDesk.style.backgroundColor = "#f2f1ef";
         groceryDesk.style.color = "rgba(3, 0, 8, 0.9)";
