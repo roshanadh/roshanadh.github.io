@@ -398,15 +398,3 @@ a:hover .bottom{
     font-family: Fira Code, 'Courier New', Courier, monospace;
     font-size: 17px;
 }
-.linkToMe{
-    color: #f2f1ef;
-}
-.linkToMe:hover{
-    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
-    animation: flow 5s ease-in-out infinite;
-    animation-direction: alternate;
-    background-size: 500%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
