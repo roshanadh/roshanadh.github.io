@@ -155,11 +155,17 @@ function toggleTheme(){
         projectsHeader.style.backgroundColor = "rgba(3, 0, 8, 0.9)";
         projectsHeader.style.color = "#f2f1ef";
         groceryDesk.style.backgroundColor = "rgb(3, 0, 8)";
+        groceryDesk.style.color = "#f2f1ef";
         sortFiles.style.backgroundColor = "rgb(3, 0, 8)";
+        sortFiles.style.color = "#f2f1ef";
         yifyRss.style.backgroundColor = "rgb(3, 0, 8)";
+        yifyRss.style.color = "#f2f1ef";
         twitterQotd.style.backgroundColor = "rgb(3, 0, 8)";
+        twitterQotd.style.color = "#f2f1ef";
         chatterIo.style.backgroundColor = "rgb(3, 0, 8)";
+        chatterIo.style.color = "#f2f1ef";
         batteryNotifier.style.backgroundColor = "rgb(3, 0, 8)";
+        batteryNotifier.style.color = "#f2f1ef";
         github.src = "res/github.png";
         linkedIn.src = "res/linkedIn.png";
         facebook.src = "res/facebook.png";
