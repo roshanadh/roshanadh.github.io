@@ -22,7 +22,6 @@ function showMsg(){
         suitYourEyes.style.display = "inline-block";
         setTimeout( () => {
             suitYourEyes.style.display = "none";
-            console.log("Hidden");
             msgShown++;
         }, 5000);
     }
