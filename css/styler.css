@@ -291,7 +291,6 @@ span a{
 }
 .spanWrapper:hover{
     animation: flow 1s ease-out infinite;
-    
 }
 #moreProjectsLink{
     margin-left: 20px;
@@ -317,10 +316,6 @@ span a{
 }
 a:hover .bottom{
     transform: translateY(10px);
-}
-a:hover .bottom:after{
-    border-top-color: #f2f1ef;
-    border-right-color:#f2f1ef;
 }
 .bottom-button-wrapper{
     position: -webkit-sticky;
