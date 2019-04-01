@@ -27,7 +27,6 @@ function toggleTheme(){
     var firstPage = document.getElementsByClassName('firstPage')[0];
     var secondPage = document.getElementsByClassName('secondPage')[0];
     var projectsHeader = document.getElementById('projectsHeader');
-    var projectContainer = document.getElementsByClassName('projectContainer');
     var spanElement = document.getElementsByClassName('spanElement');
     var groceryDesk = document.getElementById('groceryDesk');
     var sortFiles = document.getElementById('sortFiles');
