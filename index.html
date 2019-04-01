@@ -35,7 +35,7 @@
 	    <meta name="msapplication-TileImage" content="res/favicon-144.png">
         <meta name="msapplication-config" content="res/browserconfig.xml">
     </head>
-        <body>
+        <body onscroll="scrollEventH()">
             <div class='content'>
                 <div class='firstPage' id="firstPage">
                     <h2 class='helloWorld'>
@@ -52,13 +52,13 @@
                 </div>
 
                 <div class='bottom-button-wrapper'>
-                    <a href="#secondPage">
+                    <a href="#projectsHeader">
                         <span class="bottom"></span>
                     </a>
                 </div>
 
                 <div class='secondPage' id='secondPage'>
-                    <h2 class="projectsHeader">Projects</h2>
+                    <h4 id="projectsHeader">Projects</h4>
                     <p>
                         <nav>
                             <span class="projectContainer">
@@ -110,5 +110,21 @@
             <div class="footer">
                 <span class="footerText">Made with <span class="heartUnicode">❤️</span> by <a class="linkToMe" href="https://github.com/roshanadh" target="_blank">Roshan</a></span>
             </div>
+            <script>
+                function scrollEventH(){
+                    var projectsHeader = document.getElementById('projectsHeader');
+                    var offsetY = projectsHeader.offsetTop;
+                    
+                    // Change background color of Projects header when it sticks to the top
+                    if(offsetY >= 700){
+                        projectsHeader.style.backgroundColor = "rgba(5, 5, 8, 0.9";
+                    }
+
+                    // Reset background color
+                    else{
+                        projectsHeader.style.background = "rgba(3, 0, 8, 0.9)";
+                    }
+                }
+            </script>
         </body>
 </html>

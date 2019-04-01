@@ -68,8 +68,8 @@ span a{
 }
 .secondPage{
     padding-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0;
+    margin-right: 0;
 }
 .helloWorld{
     font-size: 100px;
@@ -189,16 +189,19 @@ span a{
     animation: flow 17s ease-in-out infinite;
     animation-direction: alternate;
 }
-.projectsHeader{
+#projectsHeader{
     font-family: Fira Code, 'Courier New', Courier, monospace;
     margin-top: 0;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 15px;
     position: sticky;
     top: 0px;
     height: auto;
     color: #f2f1ef;
     background-color: rgba(3, 0, 8, 0.9);
+    transition: 0.2s ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
     transform: translateY(-20px);              
@@ -374,7 +377,7 @@ a:hover .bottom{
     animation-direction: alternate;
 }
 .footer{
-    background: rgba(255, 0, 0, 0.05);
+    background: rgba(36, 37, 42, 0.2);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     position: static;
