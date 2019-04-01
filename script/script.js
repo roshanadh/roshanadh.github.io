@@ -27,6 +27,7 @@ function toggleTheme(){
     var firstPage = document.getElementsByClassName('firstPage')[0];
     var secondPage = document.getElementsByClassName('secondPage')[0];
     var projectsHeader = document.getElementById('projectsHeader');
+    var projectContainer = document.getElementsByClassName('projectContainer');
     var spanElement = document.getElementsByClassName('spanElement');
     var groceryDesk = document.getElementById('groceryDesk');
     var sortFiles = document.getElementById('sortFiles');
@@ -103,11 +104,17 @@ function toggleTheme(){
         projectsHeader.style.backgroundColor = "#f2f1ef";
         projectsHeader.style.color = "rgba(3, 0, 8, 0.9)";
         groceryDesk.style.backgroundColor = "#f2f1ef";
+        groceryDesk.style.color = "rgba(3, 0, 8, 0.9)";
         sortFiles.style.backgroundColor = "#f2f1ef";
+        sortFiles.style.color = "rgba(3, 0, 8, 0.9)";
         yifyRss.style.backgroundColor = "#f2f1ef";
+        yifyRss.style.color = "rgba(3, 0, 8, 0.9)";
         twitterQotd.style.backgroundColor = "#f2f1ef";
+        twitterQotd.style.color = "rgba(3, 0, 8, 0.9)";
         chatterIo.style.backgroundColor = "#f2f1ef";
+        chatterIo.style.color = "rgba(3, 0, 8, 0.9)";
         batteryNotifier.style.backgroundColor = "#f2f1ef";
+        batteryNotifier.style.color = "rgba(3, 0, 8, 0.9)";
         github.src = "res/githubBlack.png";
         linkedIn.src = "res/linkedInBlack.png";
         facebook.src = "res/facebookBlack.png";
