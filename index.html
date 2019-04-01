@@ -35,7 +35,10 @@
 	    <meta name="msapplication-TileImage" content="res/favicon-144.png">
         <meta name="msapplication-config" content="res/browserconfig.xml">
     </head>
-        <body onscroll="scrollEventH()">
+        <body onload="setTheme('dark')">
+            <div id='themeToggle-div'>
+                <img class="themeIndicator" src="res/sun.png" alt="Sun" onclick="toggleTheme()">
+            </div>
             <div class='content'>
                 <div class='firstPage' id="firstPage">
                     <h2 class='helloWorld'>
@@ -110,10 +113,10 @@
 
             <div class="contactSection">
                 <nav>
-                    <a href="https://github.com/roshanadh/" target="_blank"><img class="contactLogo" src="res/github.png" alt="GitHub Logo"></a>
-                    <a href="https://linkedin.com/in/roshanadh/" target="_blank"><img class="contactLogo" src="res/linkedIn.png" alt="LinkedIn Logo"></a>
-                    <a href="https://facebook.com/nahsorad/" target="_blank"><img class="contactLogo" src="res/facebook.png" alt="Facebook Logo"></a>
-                    <a href="mailto:nahsorad@gmail.com" target="_blank"><img class="contactLogo" src="res/email.png" alt="Email Logo"></a>
+                    <a href="https://github.com/roshanadh/" target="_blank"><img class="contactLogo" id="github" src="res/github.png" alt="GitHub Logo"></a>
+                    <a href="https://linkedin.com/in/roshanadh/" target="_blank"><img class="contactLogo" id="linkedIn" src="res/linkedIn.png" alt="LinkedIn Logo"></a>
+                    <a href="https://facebook.com/nahsorad/" target="_blank"><img class="contactLogo" id="facebook" src="res/facebook.png" alt="Facebook Logo"></a>
+                    <a href="mailto:nahsorad@gmail.com" target="_blank"><img class="contactLogo" id="email" src="res/email.png" alt="Email Logo"></a>
                 </nav>
             </div>
 
@@ -121,18 +124,82 @@
                 <span class="footerText">Made with <span class="heartUnicode">❤️</span> by Roshan</span>
             </div>
             <script>
-                function scrollEventH(){
+                let theme;
+                function setTheme(flag){
+                    theme = flag;
+                }
+                
+                function toggleTheme(){
+                   
+                    var firstPage = document.getElementsByClassName('firstPage')[0];
+                    var secondPage = document.getElementsByClassName('secondPage')[0];
                     var projectsHeader = document.getElementById('projectsHeader');
-                    var offsetY = projectsHeader.offsetTop;
-                    
-                    // Change background color of Projects header when it sticks to the top
-                    if(offsetY >= 700){
-                        projectsHeader.style.backgroundColor = "rgba(5, 5, 8, 0.9";
+                    var spanElement = document.getElementsByClassName('spanElement');
+                    var groceryDesk = document.getElementById('groceryDesk');
+                    var sortFiles = document.getElementById('sortFiles');
+                    var yifyRss = document.getElementById('yifyRss');
+                    var twitterQotd = document.getElementById('twitterQotd');
+                    var chatterIo = document.getElementById('chatterIo');
+                    var batteryNotifier = document.getElementById('batteryNotifier');
+                    var github = document.getElementById('github');
+                    var linkedIn = document.getElementById('linkedIn');
+                    var facebook = document.getElementById('facebook');
+                    var email = document.getElementById('email');
+                    var footer = document.getElementsByClassName('footer')[0];
+                    var footerText = document.getElementsByClassName('footerText')[0];
+                    var themeIndicator = document.getElementsByClassName('themeIndicator')[0];
+                    var bottomButton = document.getElementsByClassName('bottom')[0];
+
+                    if(theme == 'dark'){
+                        themeIndicator.src = "res/moon.png";
+                        document.body.style.backgroundColor = "#f2f1ef";
+                        firstPage.style.color = "rgba(3, 0, 8, 0.9)"; 
+                        secondPage.style.color = "rgba(3, 0, 8, 0.9)";
+                        projectsHeader.style.backgroundColor = "#f2f1ef";
+                        projectsHeader.style.color = "rgba(3, 0, 8, 0.9)";
+                        groceryDesk.style.backgroundColor = "#f2f1ef";
+                        sortFiles.style.backgroundColor = "#f2f1ef";
+                        yifyRss.style.backgroundColor = "#f2f1ef";
+                        twitterQotd.style.backgroundColor = "#f2f1ef";
+                        chatterIo.style.backgroundColor = "#f2f1ef";
+                        batteryNotifier.style.backgroundColor = "#f2f1ef";
+                        github.src = "res/githubBlack.png";
+                        linkedIn.src = "res/linkedInBlack.png";
+                        facebook.src = "res/facebookBlack.png";
+                        email.src = "res/emailBlack.png";
+
+                        for(i = spanElement.length; i-- ;){
+                            spanElement[i].style.backgroundColor = "#f2f1ef";
+                            spanElement[i].style.color = "rgba(3, 0, 8, 0.9)";
+                        }
+
+                        setTheme('light');
                     }
 
-                    // Reset background color
-                    else{
-                        projectsHeader.style.background = "rgba(3, 0, 8, 0.9)";
+                    else if(theme == 'light'){
+                        themeIndicator.src = "res/sun.png";
+                        document.body.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        firstPage.style.color = "#f2f1ef"; 
+                        secondPage.style.color = "#f2f1ef";
+                        projectsHeader.style.backgroundColor = "rgba(3, 0, 8, 0.9)"; //f
+                        projectsHeader.style.color = "#f2f1ef";
+                        groceryDesk.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        sortFiles.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        yifyRss.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        twitterQotd.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        chatterIo.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        batteryNotifier.style.backgroundColor = "rgb(3, 0, 8)"; //f
+                        github.src = "res/github.png";
+                        linkedIn.src = "res/linkedIn.png";
+                        facebook.src = "res/facebook.png";
+                        email.src = "res/email.png";
+
+                        for(i = spanElement.length; i-- ;){
+                            spanElement[i].style.backgroundColor = "rgb(3, 0, 8)"; //f rgba(3, 0, 8, 0.9)
+                            spanElement[i].style.color = "#f2f1ef";
+                        }
+
+                        setTheme('dark');
                     }
                 }
             </script>

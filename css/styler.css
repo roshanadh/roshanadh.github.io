@@ -52,6 +52,16 @@ body{
         -webkit-transform: translateX(-4px) rotate(45deg);
     }
 }
+#themeToggle-div{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.themeIndicator{
+    width: 40px;
+    height: 40px;
+}
 span a{
     text-decoration: none;
 }
