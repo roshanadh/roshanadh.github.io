@@ -134,7 +134,7 @@ function toggleTheme(){
         }
         
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "box-shadow: 0px 0px 20px rgba(225,225,225,0.6)";
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(225, 225, 225, 0.6)";
         }
 
         setTheme('light');
@@ -182,6 +182,10 @@ function toggleTheme(){
         for(i = spanElement.length; i-- ;){
             spanElement[i].style.backgroundColor = "rgb(3, 0, 8)";
             spanElement[i].style.color = "#f2f1ef";
+        }
+
+        for(i = projectContainer.length; i--;){
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(55, 71, 79, 0.2)";
         }
 
         setTheme('dark');
