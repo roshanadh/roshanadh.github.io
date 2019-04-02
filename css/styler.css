@@ -113,6 +113,21 @@ span a{
 .helloWorld{
     font-size: 100px;
 }
+@media only screen and (max-width: 380px){
+    .helloWorld{
+      font-size: 50px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .helloWorld{
+      font-size: 60px;
+    }
+}
+@media only screen and (max-width: 470px){
+    .helloWorld{
+      font-size: 80px;
+    }
+}
 .intro, .helloWorld{
     font-family: Fira Code, 'Courier New', Courier, monospace;
     text-align: left;
