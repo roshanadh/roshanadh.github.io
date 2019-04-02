@@ -32,6 +32,7 @@ function toggleTheme(){
     var firstPage = document.getElementsByClassName('firstPage')[0];
     var secondPage = document.getElementsByClassName('secondPage')[0];
     var projectsHeader = document.getElementById('projectsHeader');
+    var projectContainer = document.getElementsByClassName('projectContainer');
     var spanElement = document.getElementsByClassName('spanElement');
     var groceryDesk = document.getElementById('groceryDesk');
     var sortFiles = document.getElementById('sortFiles');
@@ -127,9 +128,13 @@ function toggleTheme(){
         footer.style.backgroundColor = "rgba(238, 238, 238, 1)";
         footer.style.color = "rgba(3, 0, 8, 0.9)";
 
-        for(i = spanElement.length; i-- ;){
+        for(i = spanElement.length; i--;){
             spanElement[i].style.backgroundColor = "#f2f1ef";
             spanElement[i].style.color = "rgba(3, 0, 8, 0.9)";
+        }
+        
+        for(i = projectContainer.length; i--;){
+            projectContainer[i].style.boxShadow = "box-shadow: 0px 0px 20px rgba(225,225,225,0.6)";
         }
 
         setTheme('light');
