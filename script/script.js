@@ -106,7 +106,8 @@ function toggleTheme(){
         document.body.style.backgroundColor = "#f2f1ef";
         firstPage.style.color = "rgba(3, 0, 8, 0.9)"; 
         secondPage.style.color = "rgba(3, 0, 8, 0.9)";
-        projectsHeader.style.backgroundColor = "rgba(242, 241, 239, 0.9)";
+        projectsHeader.style.backgroundColor = "rgba(242, 241, 239, 1)";
+        projectsHeader.style.boxShadow = "0px 3px 4px rgba(225, 225, 225, 0.6)";
         projectsHeader.style.color = "rgba(3, 0, 8, 0.9)";
         groceryDesk.style.backgroundColor = "#f2f1ef";
         groceryDesk.style.color = "rgba(3, 0, 8, 0.9)";
@@ -157,7 +158,8 @@ function toggleTheme(){
         document.body.style.backgroundColor = "rgb(3, 0, 8)";
         firstPage.style.color = "#f2f1ef"; 
         secondPage.style.color = "#f2f1ef";
-        projectsHeader.style.backgroundColor = "rgba(3, 0, 8, 0.9)";
+        projectsHeader.style.backgroundColor = "rgba(3, 0, 8, 1)";
+        projectsHeader.style.boxShadow = "0px 3px 4px rgba(40, 40, 40, 0.6)";
         projectsHeader.style.color = "#f2f1ef";
         groceryDesk.style.backgroundColor = "rgb(3, 0, 8)";
         groceryDesk.style.color = "#f2f1ef";
