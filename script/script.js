@@ -3,11 +3,13 @@ let msgShown = 0;
 let randomSpecifier = Math.random() * 200;
 
 function randomTheme(){
+    // Applies a random theme on load
     theme = randomSpecifier >= 100 ? 'dark' : 'light';
     toggleTheme();
 }
 
 function setTheme(flag){
+    // Sets a theme to be used by other functions
     theme = flag;
     var suitYourEyes = document.getElementById('suitYourEyes');
     setTimeout( () => {
@@ -16,7 +18,26 @@ function setTheme(flag){
     }, 5000);
 }
 
+function scrollEventH(){
+    // Checks if the projectHeader element is at
+    // the top of the window.
+    // If it is, then a box-shadow is set.
+    var bounding = document.getElementById('projectsHeader').getBoundingClientRect();
+    if(bounding.top == 0){
+        if(theme == 'dark')
+        // Set dark shadow
+            projectsHeader.style.boxShadow = "0px 3px 4px rgba(40, 40, 40, 0.6)";
+        else
+        // Set light shadow
+            projectsHeader.style.boxShadow = "0px 3px 4px rgba(225, 225, 225, 0.6)";
+    }
+    else
+    // Remove shadow if exists
+        projectsHeader.style.boxShadow = "none";
+}
+
 function showMsg(){
+    // Displays the 'suit your eyes >' message for 5 seconds
     if(msgShown <= 1){
         var suitYourEyes = document.getElementById('suitYourEyes');
         suitYourEyes.style.display = "inline-block";
@@ -28,6 +49,7 @@ function showMsg(){
 }
 
 function toggleTheme(){
+    // Toggles between the dark and light themes
     var suitYourEyes = document.getElementById('suitYourEyes');
     var firstPage = document.getElementsByClassName('firstPage')[0];
     var secondPage = document.getElementsByClassName('secondPage')[0];
@@ -107,7 +129,6 @@ function toggleTheme(){
         firstPage.style.color = "rgba(3, 0, 8, 0.9)"; 
         secondPage.style.color = "rgba(3, 0, 8, 0.9)";
         projectsHeader.style.backgroundColor = "rgba(242, 241, 239, 1)";
-        projectsHeader.style.boxShadow = "0px 3px 4px rgba(225, 225, 225, 0.6)";
         projectsHeader.style.color = "rgba(3, 0, 8, 0.9)";
         groceryDesk.style.backgroundColor = "#f2f1ef";
         groceryDesk.style.color = "rgba(3, 0, 8, 0.9)";
@@ -159,7 +180,6 @@ function toggleTheme(){
         firstPage.style.color = "#f2f1ef"; 
         secondPage.style.color = "#f2f1ef";
         projectsHeader.style.backgroundColor = "rgba(3, 0, 8, 1)";
-        projectsHeader.style.boxShadow = "0px 3px 4px rgba(40, 40, 40, 0.6)";
         projectsHeader.style.color = "#f2f1ef";
         groceryDesk.style.backgroundColor = "rgb(3, 0, 8)";
         groceryDesk.style.color = "#f2f1ef";
