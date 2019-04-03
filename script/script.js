@@ -185,7 +185,7 @@ function toggleTheme(){
         }
 
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(55, 71, 79, 0.2)";
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(40, 40, 40, 0.6)";
         }
 
         setTheme('dark');
