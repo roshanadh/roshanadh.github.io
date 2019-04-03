@@ -112,6 +112,7 @@ function toggleTheme(){
         };
 
     if(theme == 'dark'){
+
         // For changing pseudo elements like :after
         bottom.pseudoStyle("after", "border-top", "0.1em solid rgba(3, 0, 8, 0.9)");
         bottom.pseudoStyle("after", "border-right", "0.1em solid rgba(3, 0, 8, 0.9)");
@@ -153,11 +154,16 @@ function toggleTheme(){
             spanElement[i].style.backgroundColor = "#f2f1ef";
             spanElement[i].style.color = "rgba(3, 0, 8, 0.9)";
         }
+        
+        for(i = projectContainer.length; i--;){
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(225, 225, 225, 0.6)";
+        }
 
         setTheme('light');
     }
 
     else if(theme == 'light'){
+
         // For changing pseudo elements like :after
         bottom.pseudoStyle("after", "border-top", "0.1em solid #f2f1ef");
         bottom.pseudoStyle("after", "border-right", "0.1em solid #f2f1ef");
@@ -198,6 +204,10 @@ function toggleTheme(){
         for(i = spanElement.length; i-- ;){
             spanElement[i].style.backgroundColor = "rgb(3, 0, 8)";
             spanElement[i].style.color = "#f2f1ef";
+        }
+
+        for(i = projectContainer.length; i--;){
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(40, 40, 40, 0.6)";
         }
 
         setTheme('dark');
