@@ -143,7 +143,7 @@ span a{
 #h, #e, #l1, #l2, #o1, #w, #o2, #r, #l3, #d, #ex{
     cursor: pointer;
     display: inline-block;
-    transition: 2s ease-in-out;
+    transition: 1s ease-in-out;
 }
 /* To display gradient animation over the whole text */
 #h{
