@@ -91,9 +91,6 @@ body{
     height: 40px;
     vertical-align: middle;
 }
-span a{
-    text-decoration: none;
-}
 .firstPage, .secondPage{
     font-size: xx-large;
     color: #f2f1ef;
@@ -135,7 +132,7 @@ span a{
     text-align: left;
 }
 .intro{
-    font-size: 19px;
+    font-size: 20px;
 }
 #hello, #world{
     display: inline-block;
@@ -355,6 +352,7 @@ a:hover .bottom{
     transition: 1s ease-in-out;
 }   
 .bottom:after {
+    opacity: 0.2;
     content: '';
     display: inline-block;
     margin-top: 0.6em;
@@ -368,15 +366,15 @@ a:hover .bottom{
 .sideLeft, .sideRight {
     width: 2em;
     height: 2em;
-    opacity: 0.3;
 } 
 .sideLeft:after, .sideRight:after{
+    opacity: 0.2;
     content: '';
     display: inline-block;
     margin-top: 0.6em;
     margin-bottom: 1px;
-    width: 0.3em;
-    height: 0.3em;
+    width: 0.25em;
+    height: 0.25em;
     border-top: 0.05em solid #f2f1ef;
 }  
 .sideLeft:after {
