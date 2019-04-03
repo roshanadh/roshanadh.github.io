@@ -267,9 +267,6 @@ span a{
     border-radius: 10px;
     padding: 10px;
 }
-nav{
-    align-content: center;
-}
 .secondPage .projectContainer{
     margin-left: 40px;
     margin-right: 40px;
@@ -288,7 +285,7 @@ nav{
 .logoContainer{
     padding-top: 5px;
 }
-#javaLogo, #nodejsLogo, #androidLogo{
+#javaLogo, #nodejsLogo, #androidLogo, #pythonLogo{
    padding: 0;
 }
 #javaLogo{
@@ -369,12 +366,12 @@ a:hover .bottom{
     animation: jump 2s ease-in-out infinite;
     animation-direction: alternate;
 }
-.sideLeft {
+.sideLeft, .sideRight {
     width: 2em;
     height: 2em;
     opacity: 0.3;
-}   
-.sideLeft:after {
+} 
+.sideLeft:after, .sideRight:after{
     content: '';
     display: inline-block;
     margin-top: 0.6em;
@@ -383,28 +380,14 @@ a:hover .bottom{
     height: 0.3em;
     border-top: 0.05em solid #f2f1ef;
     border-right: 0.05em solid #f2f1ef;
+}  
+.sideLeft:after {
     animation: swingRight 1s ease-in-out infinite;
     animation-direction: alternate;
-}
-.sideRight {
-    width: 2em;
-    height: 2em;
-    opacity: 0.3;
-}   
+} 
 .sideRight:after {
-    content: '';
-    display: inline-block;
-    margin-top: 0.6em;
-    margin-bottom: 1px;
-    width: 0.3em;
-    height: 0.3em;
-    border-top: 0.05em solid #f2f1ef;
-    border-left: 0.05em solid #f2f1ef;
     animation: swingLeft 1s ease-in-out infinite;
     animation-direction: alternate;
-}
-.contactSection{
-    vertical-align: center;
 }
 .contactLogo{
     margin: 30px;
