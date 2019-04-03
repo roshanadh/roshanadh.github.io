@@ -252,9 +252,8 @@ span a{
     padding-bottom: 15px;
     position: sticky;
     top: 0px;
-    height: auto;
     color: #f2f1ef;
-    background-color: rgba(3, 0, 8, 0.9);
+    background-color: rgba(3, 0, 8, 1);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
