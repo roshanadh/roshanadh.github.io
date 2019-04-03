@@ -378,13 +378,14 @@ a:hover .bottom{
     width: 0.3em;
     height: 0.3em;
     border-top: 0.05em solid #f2f1ef;
-    border-right: 0.05em solid #f2f1ef;
 }  
 .sideLeft:after {
+    border-right: 0.05em solid #f2f1ef;
     animation: swingRight 1s ease-in-out infinite;
     animation-direction: alternate;
 } 
 .sideRight:after {
+    border-left: 0.05em solid #f2f1ef;
     animation: swingLeft 1s ease-in-out infinite;
     animation-direction: alternate;
 }
