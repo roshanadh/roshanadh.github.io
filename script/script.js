@@ -1,12 +1,5 @@
 let theme;
 let msgShown = 0;
-let randomSpecifier = Math.random() * 200;
-
-function randomTheme(){
-    // Applies a random theme on load
-    theme = randomSpecifier >= 100 ? 'dark' : 'light';
-    toggleTheme();
-}
 
 function setTheme(flag){
     // Sets a theme to be used by other functions
