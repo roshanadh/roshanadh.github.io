@@ -232,7 +232,4 @@ function toggleTheme(){
 
         setTheme('dark');
     }
-
-    // Display the hidden switch theme message now
-    showMsg();
 }
