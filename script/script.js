@@ -1,5 +1,5 @@
 let theme;
-let msgShown = 0;
+let msgShown = 0, firstLoad = true;
 
 function setTheme(flag){
     // Sets a theme to be used by other functions
@@ -9,6 +9,25 @@ function setTheme(flag){
         suitYourEyes.style.display = "none";
         msgShown++;
     }, 5000);
+
+    if(firstLoad == true){
+        // If the page is being loaded the first time,
+        // the source for icons must be defined
+        // according to the set theme.
+        var github = document.getElementById('github');
+        var linkedIn = document.getElementById('linkedIn');
+        var facebook = document.getElementById('facebook');
+        var email = document.getElementById('email');
+        var themeIndicator = document.getElementsByClassName('themeIndicator')[0];
+
+        themeIndicator.src = "res/moon.png";
+        github.src = "res/githubBlack.png";
+        linkedIn.src = "res/linkedInBlack.png";
+        facebook.src = "res/facebookBlack.png";
+        email.src = "res/emailBlack.png";
+
+        firstLoad = false;
+    }
 }
 
 function scrollEventH(){
@@ -19,7 +38,7 @@ function scrollEventH(){
     if(bounding.top == 0){
         if(theme == 'dark')
         // Set dark shadow
-            projectsHeader.style.boxShadow = "0px 3px 4px rgba(40, 40, 40, 0.6)";
+            projectsHeader.style.boxShadow = "0px 2px 2px rgba(255, 255, 255, 0.1)";
         else
         // Set light shadow
             projectsHeader.style.boxShadow = "0px 3px 4px rgba(225, 225, 225, 0.6)";
@@ -200,7 +219,7 @@ function toggleTheme(){
         }
 
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(40, 40, 40, 0.6)";
+            projectContainer[i].style.boxShadow = "0px 0px 2px rgba(255, 255, 255, 0.5)";
         }
 
         setTheme('dark');
