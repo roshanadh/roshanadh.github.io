@@ -38,7 +38,7 @@ function scrollEventH(){
     if(bounding.top == 0){
         if(theme == 'dark')
         // Set dark shadow
-            projectsHeader.style.boxShadow = "0px 2px 2px rgba(255, 255, 255, 0.1)";
+            projectsHeader.style.boxShadow = "0px 4px 8px rgba(36, 37, 42, 0.2)";
         else
         // Set light shadow
             projectsHeader.style.boxShadow = "0px 3px 4px rgba(225, 225, 225, 0.6)";
@@ -219,7 +219,7 @@ function toggleTheme(){
         }
 
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "0px 0px 2px rgba(255, 255, 255, 0.5)";
+            projectContainer[i].style.boxShadow = "0px 0px 8px rgba(36, 37, 42, 0.6)";
         }
 
         setTheme('dark');
