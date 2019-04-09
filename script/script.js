@@ -124,7 +124,6 @@ function toggleTheme(){
         };
 
     if(theme == 'dark'){
-
         // For changing pseudo elements like :after
         bottom.pseudoStyle("after", "border-top", "0.1em solid rgba(3, 0, 8, 0.9)");
         bottom.pseudoStyle("after", "border-right", "0.1em solid rgba(3, 0, 8, 0.9)");
@@ -175,7 +174,6 @@ function toggleTheme(){
     }
 
     else if(theme == 'light'){
-
         // For changing pseudo elements like :after
         bottom.pseudoStyle("after", "border-top", "0.1em solid #f2f1ef");
         bottom.pseudoStyle("after", "border-right", "0.1em solid #f2f1ef");
