@@ -5,6 +5,7 @@ function setTheme(flag){
     // Sets a theme to be used by other functions
     theme = flag;
     var suitYourEyes = document.getElementById('suitYourEyes');
+    
     setTimeout( () => {
         suitYourEyes.style.display = "none";
         msgShown++;
@@ -50,9 +51,15 @@ function scrollEventH(){
 
 function showMsg(){
     // Displays the 'suit your eyes >' message for 5 seconds
-    if(msgShown <= 1){
+    if(msgShown <= 5){
         var suitYourEyes = document.getElementById('suitYourEyes');
         suitYourEyes.style.display = "inline-block";
+
+        if(theme == 'light')
+            suitYourEyes.innerText = "switch to a darker theme >";
+        else
+            suitYourEyes.innerText = "switch to a lighter theme >";
+
         setTimeout( () => {
             suitYourEyes.style.display = "none";
             msgShown++;
@@ -84,6 +91,9 @@ function toggleTheme(){
     var sideLeft = document.getElementsByClassName('sideLeft')[0];
     var sideRight = document.getElementsByClassName('sideRight')[0];
     var moreProjectsLink = document.getElementById('moreProjectsLink');
+
+    // Hide the switch theme message for an instant
+    suitYourEyes.style.display = "none";
 
         /* 
          * I couldn't find anything more reliable(or working) 
@@ -222,4 +232,7 @@ function toggleTheme(){
 
         setTheme('dark');
     }
+
+    // Display the hidden switch theme message now
+    showMsg();
 }
