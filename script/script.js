@@ -51,7 +51,7 @@ function scrollEventH(){
 
 function showMsg(){
     // Displays the 'suit your eyes >' message for 5 seconds
-    if(msgShown <= 5){
+    if(msgShown <= 1){
         var suitYourEyes = document.getElementById('suitYourEyes');
         suitYourEyes.style.display = "inline-block";
 
