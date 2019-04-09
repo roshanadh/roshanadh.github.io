@@ -177,7 +177,7 @@ function toggleTheme(){
         }
         
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(225, 225, 225, 0.1)";
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(225, 225, 225, 0.6)";
         }
 
         setTheme('light');
