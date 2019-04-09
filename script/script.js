@@ -38,7 +38,7 @@ function scrollEventH(){
     if(bounding.top == 0){
         if(theme == 'dark')
         // Set dark shadow
-            projectsHeader.style.boxShadow = "0px 4px 8px rgba(36, 37, 42, 0.2)";
+            projectsHeader.style.boxShadow = "0px 0px 20px rgba(3, 0, 8, 0.2)";
         else
         // Set light shadow
             projectsHeader.style.boxShadow = "0px 3px 4px rgba(225, 225, 225, 0.6)";
@@ -168,7 +168,7 @@ function toggleTheme(){
         }
         
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(225, 225, 225, 0.6)";
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(225, 225, 225, 0.1)";
         }
 
         setTheme('light');
@@ -185,41 +185,41 @@ function toggleTheme(){
         sideRight.pseudoStyle("after", "border-top", "0.1em solid #f2f1ef");
         sideRight.pseudoStyle("after", "border-left", "0.1em solid #f2f1ef");
 
-        suitYourEyes.style.backgroundColor = "rgba(36, 37, 42, 0.3)";
+        suitYourEyes.style.backgroundColor = "rgba(3, 0, 8, 0.2)";
         suitYourEyes.style.color = "#f2f1ef";
         themeIndicator.src = "res/sun.png";
-        document.body.style.backgroundColor = "rgb(3, 0, 8)";
+        document.body.style.backgroundColor = "rgba(36, 37, 42, 1)";
         firstPage.style.color = "#f2f1ef"; 
         secondPage.style.color = "#f2f1ef";
-        projectsHeader.style.backgroundColor = "rgba(3, 0, 8, 1)";
+        projectsHeader.style.backgroundColor = "rgba(36, 37, 42, 1)";
         projectsHeader.style.color = "#f2f1ef";
-        groceryDesk.style.backgroundColor = "rgb(3, 0, 8)";
+        groceryDesk.style.backgroundColor = "rgba(36, 37, 42, 1)";
         groceryDesk.style.color = "#f2f1ef";
-        sortFiles.style.backgroundColor = "rgb(3, 0, 8)";
+        sortFiles.style.backgroundColor = "rgba(36, 37, 42, 1)";
         sortFiles.style.color = "#f2f1ef";
-        yifyRss.style.backgroundColor = "rgb(3, 0, 8)";
+        yifyRss.style.backgroundColor = "rgba(36, 37, 42, 1)";
         yifyRss.style.color = "#f2f1ef";
-        twitterQotd.style.backgroundColor = "rgb(3, 0, 8)";
+        twitterQotd.style.backgroundColor = "rgba(36, 37, 42, 1)";
         twitterQotd.style.color = "#f2f1ef";
-        chatterIo.style.backgroundColor = "rgb(3, 0, 8)";
+        chatterIo.style.backgroundColor = "rgba(36, 37, 42, 1)";
         chatterIo.style.color = "#f2f1ef";
-        batteryNotifier.style.backgroundColor = "rgb(3, 0, 8)";
+        batteryNotifier.style.backgroundColor = "rgba(36, 37, 42, 1)";
         batteryNotifier.style.color = "#f2f1ef";
         github.src = "res/github.png";
         linkedIn.src = "res/linkedIn.png";
         facebook.src = "res/facebook.png";
         email.src = "res/email.png";
         moreProjectsLink.style.color = "#f2f1ef";
-        footer.style.backgroundColor = "rgba(36, 37, 42, 0.2)";
+        footer.style.backgroundColor = "rgba(10, 10, 10, 0.4)";
         footer.style.color = "#f2f1ef";
 
         for(i = spanElement.length; i-- ;){
-            spanElement[i].style.backgroundColor = "rgb(3, 0, 8)";
+            spanElement[i].style.backgroundColor = "rgba(36, 37, 42, 1)";
             spanElement[i].style.color = "#f2f1ef";
         }
 
         for(i = projectContainer.length; i--;){
-            projectContainer[i].style.boxShadow = "0px 0px 8px rgba(36, 37, 42, 0.6)";
+            projectContainer[i].style.boxShadow = "0px 0px 20px rgba(3, 0, 8, 0.1)";
         }
 
         setTheme('dark');
