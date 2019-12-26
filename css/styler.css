@@ -253,7 +253,7 @@ body{
 #h:hover, #e:hover, #l1:hover, #l2:hover, #o1:hover, #w:hover, #o2:hover, #r:hover, #l3:hover, #d:hover, #ex:hover{
     transform: translateY(-20px);              
 }
-#groceryDesk, #sortFiles, #yifyRss, #twitterQotd, #chatterIo, #batteryNotifier{
+#groceryDesk, #sortFiles, #cineDigest, #twitterQotd, #chatterIo, #batteryNotifier{
     display: inline-block;
     font-size: 25px;  
     border-radius: 10px;
@@ -281,7 +281,7 @@ body{
 .logoContainer{
     padding-top: 5px;
 }
-#javaLogo, #nodejsLogo, #androidLogo, #pythonLogo{
+#javaLogo, #nodejsLogo, #rnLogo, #pythonLogo{
     padding: 0;
 }
 #javaLogo{
@@ -292,8 +292,8 @@ body{
     width: 160px;
     height: 95px;
 }
-#androidLogo{
-    width: 80px;
+#rnLogo{
+    width: 90px;
     height: 90px;
 }
 #pythonLogo{
