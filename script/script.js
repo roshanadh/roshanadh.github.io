@@ -77,7 +77,7 @@ function toggleTheme(){
     var spanElement = document.getElementsByClassName('spanElement');
     var groceryDesk = document.getElementById('groceryDesk');
     var sortFiles = document.getElementById('sortFiles');
-    var yifyRss = document.getElementById('yifyRss');
+    var cineDigest = document.getElementById('cineDigest');
     var twitterQotd = document.getElementById('twitterQotd');
     var chatterIo = document.getElementById('chatterIo');
     var batteryNotifier = document.getElementById('batteryNotifier');
@@ -150,13 +150,13 @@ function toggleTheme(){
         firstPage.style.color = "rgba(3, 0, 8, 0.9)"; 
         secondPage.style.color = "rgba(3, 0, 8, 0.9)";
         projectsHeader.style.backgroundColor = "rgba(242, 241, 239, 1)";
-        projectsHeader.style.color = "rgba(3, 0, 8, 0.9)";
+        projectsHeader.style.color = "rgba(3, 0, 8, 0.6)";
         groceryDesk.style.backgroundColor = "#f2f1ef";
         groceryDesk.style.color = "rgba(3, 0, 8, 0.9)";
         sortFiles.style.backgroundColor = "#f2f1ef";
         sortFiles.style.color = "rgba(3, 0, 8, 0.9)";
-        yifyRss.style.backgroundColor = "#f2f1ef";
-        yifyRss.style.color = "rgba(3, 0, 8, 0.9)";
+        cineDigest.style.backgroundColor = "#f2f1ef";
+        cineDigest.style.color = "rgba(3, 0, 8, 0.9)";
         twitterQotd.style.backgroundColor = "#f2f1ef";
         twitterQotd.style.color = "rgba(3, 0, 8, 0.9)";
         chatterIo.style.backgroundColor = "#f2f1ef";
@@ -205,8 +205,8 @@ function toggleTheme(){
         groceryDesk.style.color = "#f2f1ef";
         sortFiles.style.backgroundColor = "rgba(36, 37, 42, 1)";
         sortFiles.style.color = "#f2f1ef";
-        yifyRss.style.backgroundColor = "rgba(36, 37, 42, 1)";
-        yifyRss.style.color = "#f2f1ef";
+        cineDigest.style.backgroundColor = "rgba(36, 37, 42, 1)";
+        cineDigest.style.color = "#f2f1ef";
         twitterQotd.style.backgroundColor = "rgba(36, 37, 42, 1)";
         twitterQotd.style.color = "#f2f1ef";
         chatterIo.style.backgroundColor = "rgba(36, 37, 42, 1)";
