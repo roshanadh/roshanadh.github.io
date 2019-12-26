@@ -272,7 +272,6 @@ body{
 .projectContainer{
     color:  rgba(3, 0, 8, 0.9);
     border-radius: 2px;
-    max-width: fit-content;
     display: inline-block;
     margin: 1em auto;
     border-radius: 10px;
