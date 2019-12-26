@@ -200,7 +200,7 @@ body{
 }
 #o2{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-     color: transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 300%;
@@ -209,7 +209,7 @@ body{
 }
 #r{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-     color: transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 500%;
@@ -218,7 +218,7 @@ body{
 }
 #l3{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-     color: transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 300%;
@@ -227,7 +227,7 @@ body{
 }
 #d{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-     color: transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 300%;
@@ -236,7 +236,7 @@ body{
 }
 #ex{
     background: linear-gradient(-60deg, #d608ba, #d21342, #e27126);
-     color: transparent;
+    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 300%;
@@ -282,7 +282,7 @@ body{
     padding-top: 5px;
 }
 #javaLogo, #nodejsLogo, #androidLogo, #pythonLogo{
-   padding: 0;
+    padding: 0;
 }
 #javaLogo{
     width: 60px;
