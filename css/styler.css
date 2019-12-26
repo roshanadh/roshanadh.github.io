@@ -19,14 +19,10 @@ body{
 }
 @keyframes jump{
     0%{
-        transform: translateY(-4px) rotate(135deg);
-        -moz-transform: translateY(-4px) rotate(135deg);
-        -webkit-transform: translateY(-4px) rotate(135deg);
+        transform: rotate(135deg);
     }
     100%{
-        transform: translateY(4px) rotate(135deg);
-        -moz-transform: translateY(4px) rotate(135deg);
-        -webkit-transform: translateY(4px) rotate(135deg);
+        transform: rotate(135deg);
     }
 }
 @keyframes swingLeft{
