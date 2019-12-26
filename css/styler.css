@@ -259,6 +259,10 @@ body{
     border-radius: 10px;
     padding: 10px;
 }
+#blogLink{
+    text-decoration: none;
+    color: #00b5cc;
+}
 .secondPage .projectContainer{
     margin-left: 40px;
     margin-right: 40px;
