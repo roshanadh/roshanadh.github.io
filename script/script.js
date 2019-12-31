@@ -1,5 +1,6 @@
 let theme;
 let msgShown = 0, firstLoad = true;
+let audioPlaying = false;
 
 function setTheme(flag){
     // Sets a theme to be used by other functions
@@ -228,5 +229,13 @@ function toggleTheme(){
         }
 
         setTheme('dark');
+    }
+}
+
+function playAudio() {
+    if(!audioPlaying) {
+        let audio = new Audio('res\\audio\\imagine.mp3');
+        audio.play();
+        audioPlaying = true;
     }
 }
