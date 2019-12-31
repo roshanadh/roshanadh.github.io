@@ -25,30 +25,6 @@ body{
         transform: rotate(135deg);
     }
 }
-@keyframes swingLeft{
-    0%{
-        transform: translateX(-4px) rotate(-45deg);
-        -moz-transform: translateX(-4px) rotate(-45deg);
-        -webkit-transform: translateX(-4px) rotate(-45deg);
-    }
-    100%{
-        transform: translateX(4px) rotate(-45deg);
-        -moz-transform: translateX(4px) rotate(-45deg);
-        -webkit-transform: translateX(4px) rotate(-45deg);
-    }
-}
-@keyframes swingRight{
-    0%{
-        transform: translateX(4px) rotate(45deg);
-        -moz-transform: translateX(4px) rotate(45deg);
-        -webkit-transform: translateX(4px) rotate(45deg);
-    }
-    100%{
-        transform: translateX(-4px) rotate(45deg);
-        -moz-transform: translateX(-4px) rotate(45deg);
-        -webkit-transform: translateX(-4px) rotate(45deg);
-    }
-}
 @keyframes justRight{
     0%{
         transform: translateX(4px);
@@ -338,7 +314,7 @@ body{
     display: inline-block;
     font-size: 22px;
     text-decoration: none;
-    color: rgba(3, 0, 8, 0.9);
+    color: #00b5cc;
     padding: 0 10px;
 }   
 a:hover .bottom{
@@ -383,13 +359,11 @@ a:hover .bottom{
 }  
 .sideLeft:after {
     border-right: 0.1em solid rgba(3, 0, 8, 0.9);
-    animation: swingRight 1s ease-in-out infinite;
-    animation-direction: alternate;
+    transform: rotate(45deg);
 } 
 .sideRight:after {
     border-left: 0.1em solid rgba(3, 0, 8, 0.9);
-    animation: swingLeft 1s ease-in-out infinite;
-    animation-direction: alternate;
+    transform: rotate(-45deg);
 }
 .contactLogo{
     margin-left: 30px;
