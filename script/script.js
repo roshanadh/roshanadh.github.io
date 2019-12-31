@@ -90,7 +90,6 @@ function toggleTheme(){
     var bottom = document.getElementsByClassName("bottom")[0];
     var sideLeft = document.getElementsByClassName('sideLeft')[0];
     var sideRight = document.getElementsByClassName('sideRight')[0];
-    var moreProjectsLink = document.getElementById('moreProjectsLink');
 
     // Hide the switch theme message for an instant
     suitYourEyes.style.display = "none";
@@ -167,7 +166,6 @@ function toggleTheme(){
         linkedIn.src = "res/linkedInBlack.png";
         facebook.src = "res/facebookBlack.png";
         email.src = "res/emailBlack.png";
-        moreProjectsLink.style.color = "rgba(3, 0, 8, 0.9)";
         footer.style.backgroundColor = "rgba(238, 238, 238, 1)";
         footer.style.color = "rgba(3, 0, 8, 0.9)";
 
@@ -217,7 +215,6 @@ function toggleTheme(){
         linkedIn.src = "res/linkedIn.png";
         facebook.src = "res/facebook.png";
         email.src = "res/email.png";
-        moreProjectsLink.style.color = "#f2f1ef";
         footer.style.backgroundColor = "rgba(10, 10, 10, 0.4)";
         footer.style.color = "#f2f1ef";
 
