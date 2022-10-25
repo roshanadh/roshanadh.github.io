@@ -81,7 +81,7 @@ function toggleTheme(newTheme = null) {
         linkedIn.src = "res/linkedInBlack.png";
         facebook.src = "res/facebookBlack.png";
         email.src = "res/emailBlack.png";
-        footer.style.backgroundColor = "rgba(238, 238, 238, 1)";
+        footer.style.backgroundColor = "rgba(238, 238, 238, 0.4)";
         footer.style.color = "rgba(3, 0, 8, 0.9)";
     } else {
         suitYourEyes.style.backgroundColor = "rgba(3, 0, 8, 0.2)";
