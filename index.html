@@ -52,16 +52,17 @@
 	    <meta name="msapplication-TileImage" content="res/favicon-144.png">
         <meta name="msapplication-config" content="res/browserconfig.xml">
     </head>
-        <body onload="initPage()">
-            <div id='themeToggle-div'>
-                <span>
-                    <div id="suitYourEyes">
-                        <button id="close-toggle-msg-btn" onclick="dontShowToggleMsg()">x</button> switch to a darker theme >
-                    </div>
-                    <img class="themeIndicator" src="res/moon.png" alt="Moon" onclick="toggleTheme(null)">
-                </span>
-            </div>
+    <body onload="initPage()">
+        <div id='themeToggle-div'>
+            <span>
+                <div id="suitYourEyes">
+                    <button id="close-toggle-msg-btn" onclick="dontShowToggleMsg()">x</button> switch to a darker theme >
+                </div>
+                <img class="themeIndicator" src="res/moon.png" alt="Moon" onclick="toggleTheme(null)">
+            </span>
+        </div>
 
+        <div class="wrapper">
             <div class='content'>
                 <div class='firstPage' id="firstPage">
                     <h2 class='helloWorld'>
@@ -93,5 +94,6 @@
                 </div>
                 <span class="footerText">Made with <span class="heartUnicode" onclick="playAudio()">❤️</span> by Roshan</span>
             </div>
-        </body>
+        </div>
+    </body>
 </html>

@@ -5,6 +5,13 @@ html{
 body{
     background-color: #f2f1ef;
     text-align: center;
+    margin: 0;
+}
+.wrapper {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 @keyframes flow{
     0%{
@@ -84,15 +91,44 @@ body{
     .helloWorld{
         font-size: 80px;
     }
+    .contactLogo {
+        margin: 0 30px 30px 30px;
+        max-width: auto;
+        height: 30px;
+    }
 }
 @media only screen and (max-width: 470px){
     .helloWorld{
         font-size: 60px;
     }
+    .contactLogo {
+        margin: 0 25px 25px 25px;
+        max-width: auto;
+        height: 28px;
+    }
 }
 @media only screen and (max-width: 400px){
     .helloWorld{
-        font-size: 40px;
+        font-size: 60px;
+    }
+    .contactLogo {
+        margin: 0 20px 20px 20px;
+        max-width: auto;
+        height: 25px;
+    }
+}
+@media only screen and (max-width: 370px){
+    .helloWorld{
+        font-size: 32x;
+    }
+    .themeIndicator {
+        width: 25px;
+        height: 25px;
+    }
+    .contactLogo {
+        margin: 0 20px 20px 20px;
+        max-width: auto;
+        height: 25px;
     }
 }
 .intro, .helloWorld{
@@ -224,10 +260,8 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
 }
-.contactLogo {
-    margin: 0 30px 30px 30px;
-    max-width: auto;
-    height: 32px;
+.content {
+    flex: 1;
 }
 .footer{
     background-color: rgba(238, 238, 238, 1);
@@ -236,9 +270,6 @@ body{
     text-align: center;
     padding: 20px 0px;
     color: rgba(3, 0, 8, 0.9);
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
 }
 .footerText{
