@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <!-- 
-    -- Portfolio of Roshan Adhikari
+    -- Personal Website of Roshan Adhikari
     -- GitHub: https://www.github.com/roshanadh/
     -- LinkedIn: https://www.linkedin.com/in/roshanadh/
+    -- Hosted URL: https://roshanadh.github.io/
 
-    -- Portfolio URL: https://roshanadh.github.io/
+    Hii, please come in! Don't be shy, take a look.
+    Ohh btw, Imagine by John Lennon is such a heart-touching (see also: heart-clicking) song.
  -->
 <html> 
     <head>
@@ -50,13 +52,13 @@
 	    <meta name="msapplication-TileImage" content="res/favicon-144.png">
         <meta name="msapplication-config" content="res/browserconfig.xml">
     </head>
-        <body onload="setTheme('light')" onscroll="scrollEventH()">
+        <body onload="initPage()">
             <div id='themeToggle-div'>
                 <span>
-                    <span id="suitYourEyes">
-                        switch to a darker theme >
-                    </span>
-                    <img class="themeIndicator" src="res/sun.png" alt="Sun" onclick="toggleTheme()" onmouseover="showMsg()">
+                    <div id="suitYourEyes">
+                        <button id="close-toggle-msg-btn" onclick="dontShowToggleMsg()">x</button> switch to a darker theme >
+                    </div>
+                    <img class="themeIndicator" src="res/moon.png" alt="Moon" onclick="toggleTheme(null)">
                 </span>
             </div>
 
@@ -67,73 +69,14 @@
                     </h2>
                     <p class='intro'>
                         <span id='name'>
-                            I am Roshan Adhikari.<br>
-                            I like writing code and building stuff!<br>
-                            I enjoy working in Java and Node.js, and have built interesting projects in React Native too.<br><br>
-                            You can often find me doing my side-projects.<br>
-                            I write <a id="blogLink" href="https://www.roshanadhikary.com.np" target="_blank">blogs</a> as well!<br>
+                            My name is Roshan Adhikari. <br/>
+                            I am a Software Engineer - <span class="highlight-text">studied, trained, and working</span> - from Nepal. <br />
+                            I have experience in building <span class="highlight-text">data-intensive</span> applications that scale! <br />
+                            Also, I enjoy working on the <span class="highlight-text">back-end</span> in general! <br /><br />
+                            Do check my <a id="blogLink" href="https://www.roshanadhikary.com.np" target="_blank">blogs</a> as well!<br>
+                            (i write on a variety of topics!) <br />
+                            (i also like <span class="highlight-text">exclamations</span>!)
                         </span>
-                    </p>
-                </div>
-
-                <div class='bottom-button-wrapper'>
-                    <a href="#projectsHeader">
-                        <span class="bottom"></span>
-                    </a>
-                </div>
-
-                <div class='secondPage' id='secondPage'>
-                    <h4 id="projectsHeader">Projects</h4>
-                    <p>
-                        <nav>
-                            <span class="projectContainer">
-                                <span id="groceryDesk">
-                                    <p>GroceryDesk</p>
-                                    <div class="logoContainer"><img src="res/java.png" alt="Java Logo" id="javaLogo"><br><br></div>
-                                    <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://roshanadh.github.io/GroceryDesk','_blank')">Checkout the project!</span></span>
-                                </span>
-                            </span>
-                            <span class="projectContainer">
-                                <span id="sortFiles">
-                                    <p>sort-files</p>
-                                    <div class="logoContainer"><img src="res/nodejs.png" alt="Node.js Logo" id="nodejsLogo"><br><br></div>
-                                    <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://roshanadh.github.io/sort-files.js','_blank')">Checkout the project!</span></span>
-                                </span>
-                            </span>
-                            <span class="projectContainer">
-                                <span id="cineDigest">
-                                    <p>Cine Digest</p>
-                                    <div class="logoContainer"><img src="res/rn.png" alt="React Native Logo" id="rnLogo"><br><br></div>
-                                    <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://github.com/roshanadh/CineDigest','_blank')">Checkout the project!</span></span>
-                                </span>
-                            </span>
-                            <span class="projectContainer">
-                                <span id="twitterQotd">
-                                    <p>twitter-qotd</p>
-                                    <div class="logoContainer"><img src="res/nodejs.png" alt="Node.Js Logo" id="nodejsLogo"><br><br></div>
-                                    <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://roshanadh.github.io/twitter-qotd','_blank')">Checkout the project!</span></span>
-                                </span>
-                            </span>
-                            <span class="projectContainer">
-                                <span id="chatterIo">
-                                    <p>chatter.IO</p>
-                                    <div class="logoContainer"><img src="res/nodejs.png" alt="Node.Js Logo" id="nodejsLogo"><br><br></div>
-                                    <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://github.com/roshanadh/chatter.io','_blank')">Checkout the project!</span></span>
-                                </span>
-                            </span>
-                            <span class="projectContainer">
-                                <span id="batteryNotifier">
-                                    <p>battery-notifier</p>
-                                    <div class="logoContainer"><img src="res/python.png" alt="Python Logo" id="pythonLogo"><br><br></div>
-                                    <span class="spanWrapper"><span class="spanElement" onclick="window.open('https://roshanadh.github.io/battery-notifier','_blank')">Checkout the project!</span></span>
-                                </span>
-                            </span>
-                        </nav> 
-                    </p>
-                    <p>
-                        <span class="sideLeft"></span>
-                        <a id="moreProjectsLink" href="https://github.com/roshanadh/repositories" target="_blank">and more!</a>
-                        <span class="sideRight"></span>
                     </p>
                 </div>
             </div>
@@ -141,10 +84,11 @@
             <div class="footer">
                 <div class="contactSection">
                     <nav>
-                        <a href="https://github.com/roshanadh/" target="_blank"><img class="contactLogo" id="github" src="res/github.png" alt="GitHub Logo"></a>
-                        <a href="https://linkedin.com/in/roshanadh/" target="_blank"><img class="contactLogo" id="linkedIn" src="res/linkedIn.png" alt="LinkedIn Logo"></a>
-                        <a href="https://facebook.com/nahsorad/" target="_blank"><img class="contactLogo" id="facebook" src="res/facebook.png" alt="Facebook Logo"></a>
-                        <a href="mailto:nahsorad@gmail.com" target="_blank"><img class="contactLogo" id="email" src="res/email.png" alt="Email Logo"></a>
+                        <a href="https://www.roshanadhikari.name.np/" target="_blank"><img class="contactLogo" id="timeline" src="res/tl-icon-dark.png" alt="Timeline Logo"></a>
+                        <a href="https://github.com/roshanadh/" target="_blank"><img class="contactLogo" id="github" src="res/githubBlack.png" alt="GitHub Logo"></a>
+                        <a href="https://linkedin.com/in/roshanadh/" target="_blank"><img class="contactLogo" id="linkedIn" src="res/linkedInBlack.png" alt="LinkedIn Logo"></a>
+                        <a href="https://facebook.com/nahsorad/" target="_blank"><img class="contactLogo" id="facebook" src="res/facebookBlack.png" alt="Facebook Logo"></a>
+                        <a href="mailto:nahsorad@gmail.com" target="_blank"><img class="contactLogo" id="email" src="res/emailBlack.png" alt="Email Logo"></a>
                     </nav>
                 </div>
                 <span class="footerText">Made with <span class="heartUnicode" onclick="playAudio()">❤️</span> by Roshan</span>
