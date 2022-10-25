@@ -12,20 +12,13 @@ function getCurrentTheme() {
 
 function hasUserHiddenThemeToggleMsg() {
     const cookie = document.cookie;
-    const showThemeToggleMsg = cookie
-        ?.split(";")[0]
+    const showThemeToggleMsg = 
+        cookie
+        ?.split(";")
+        .find(row => row.trim().startsWith("showThemeToggleMsg"))
         ?.split("=")[1];
 
     return showThemeToggleMsg === "false";
-}
-
-function showOrHideThemeToggleMsg() {
-    const isToggleMsgHidden = hasUserHiddenThemeToggleMsg();
-    let suitYourEyes = document.getElementById('suitYourEyes');
-
-    suitYourEyes.style.display = (isToggleMsgHidden)
-        ? "none"
-        : "inline-block";
 }
 
 function initTheme() {
@@ -34,12 +27,12 @@ function initTheme() {
 }
 
 function initPage() {
-    showOrHideThemeToggleMsg();
     initTheme();
 }
 
 function dontShowToggleMsg() {
-    document.cookie = `showThemeToggleMsg=false;max-age=86400;`;
+    console.log("hide")
+    document.cookie = `showThemeToggleMsg=false`;
     let suitYourEyes = document.getElementById('suitYourEyes');
     suitYourEyes.style.display = "none";
 }
